@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name import_footprint)(type KiCad)(uri "C:/Program Files/KiCad/import_footprint")(options "")(descr ""))
+  (lib (name Imported_Footprints)(type KiCad)(uri ${KIPRJMOD}/Imported_Footprints)(options "")(descr ""))
+)

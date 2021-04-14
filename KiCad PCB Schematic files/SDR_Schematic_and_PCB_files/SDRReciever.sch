@@ -1,0 +1,2163 @@
+EESchema Schematic File Version 4
+LIBS:SDRReciever-cache
+EELAYER 26 0
+EELAYER END
+$Descr A0 46811 33110
+encoding utf-8
+Sheet 1 1
+Title "SDR Reciever"
+Date "2021-04-13"
+Rev "0.1"
+Comp "Walla Walla University"
+Comment1 "Author: Darius Felder"
+Comment2 "Author: Caleb Nelson"
+Comment3 "ENGR 357"
+Comment4 ""
+$EndDescr
+$Comp
+L SDRReciever-rescue:L-Device L1
+U 1 1 5E938A64
+P 4250 2050
+F 0 "L1" H 4303 2096 50  0000 L CNN
+F 1 "820nH" H 4303 2005 50  0000 L CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm" H 4250 2050 50  0001 C CNN
+F 3 "http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf" H 4250 2050 50  0001 C CNN
+	1    4250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C1
+U 1 1 5E93C289
+P 4050 2050
+F 0 "C1" H 4350 2050 50  0000 R CNN
+F 1 "620pF" H 4400 2150 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4088 1900 50  0001 C CNN
+F 3 "~" H 4050 2050 50  0001 C CNN
+	1    4050 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L SDRReciever-rescue:Si5351A-B-GT-Oscillator U1
+U 1 1 5E942E32
+P 9400 6275
+F 0 "U1" H 8950 6850 50  0000 C CNN
+F 1 "Si5351A-B-GT" H 8950 6750 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 9400 5475 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf" H 9050 6175 50  0001 C CNN
+	1    9400 6275
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:AudioJack3-Connector J2
+U 1 1 5E956DCB
+P 16625 2550
+F 0 "J2" H 16345 2483 50  0000 R CNN
+F 1 "AudioJack3" H 16345 2574 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_Switronic_ST-005-G_horizontal" H 16625 2550 50  0001 C CNN
+F 3 "https://static.qobuz.com/info/IMG/pdf/VT1620A.pdf" H 16625 2550 50  0001 C CNN
+	1    16625 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR08
+U 1 1 5E976467
+P 10625 2550
+F 0 "#PWR08" H 10625 2300 50  0001 C CNN
+F 1 "GND" H 10475 2450 50  0000 C CNN
+F 2 "" H 10625 2550 50  0001 C CNN
+F 3 "" H 10625 2550 50  0001 C CNN
+	1    10625 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR010
+U 1 1 5E97707F
+P 10975 2550
+F 0 "#PWR010" H 10975 2300 50  0001 C CNN
+F 1 "GND" H 11125 2450 50  0000 C CNN
+F 2 "" H 10975 2550 50  0001 C CNN
+F 3 "" H 10975 2550 50  0001 C CNN
+	1    10975 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR011
+U 1 1 5E977BE4
+P 10975 3850
+F 0 "#PWR011" H 10975 3600 50  0001 C CNN
+F 1 "GND" H 10975 3700 50  0000 C CNN
+F 2 "" H 10975 3850 50  0001 C CNN
+F 3 "" H 10975 3850 50  0001 C CNN
+	1    10975 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR07
+U 1 1 5E990034
+P 7950 3000
+F 0 "#PWR07" H 7950 2750 50  0001 C CNN
+F 1 "GND" H 8050 2900 50  0000 C CNN
+F 2 "" H 7950 3000 50  0001 C CNN
+F 3 "" H 7950 3000 50  0001 C CNN
+	1    7950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR012
+U 1 1 5E9A6AD1
+P 16425 2850
+F 0 "#PWR012" H 16425 2600 50  0001 C CNN
+F 1 "GND" H 16430 2677 50  0000 C CNN
+F 2 "" H 16425 2850 50  0001 C CNN
+F 3 "" H 16425 2850 50  0001 C CNN
+	1    16425 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR013
+U 1 1 5E9AAF5F
+P 18000 5600
+F 0 "#PWR013" H 18000 5350 50  0001 C CNN
+F 1 "GND" H 18005 5427 50  0000 C CNN
+F 2 "" H 18000 5600 50  0001 C CNN
+F 3 "" H 18000 5600 50  0001 C CNN
+	1    18000 5600
+	1    0    0    -1  
+$EndComp
+Text Label 16850 5050 1    50   ~ 0
+SDA
+Text Label 16950 5050 1    50   ~ 0
+SCL
+$Comp
+L SDRReciever-rescue:74HC74-74xx U2
+U 2 1 5E9D4D5A
+P 11350 6375
+F 0 "U2" H 11350 5875 50  0000 C CNN
+F 1 "74AC74" H 11350 5775 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 11350 6375 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ahc74.pdf" H 11350 6375 50  0001 C CNN
+	2    11350 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:74HC74-74xx U2
+U 1 1 5E9D5C59
+P 11350 5575
+F 0 "U2" H 11350 6056 50  0000 C CNN
+F 1 "74AC74" H 11350 5965 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 11350 5575 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ahc74.pdf" H 11350 5575 50  0001 C CNN
+	1    11350 5575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 5975 11000 6275
+Wire Wire Line
+	11000 6275 11050 6275
+NoConn ~ 11650 6275
+Wire Wire Line
+	12100 5475 12100 5975
+Text Label 11650 5675 0    50   ~ 0
+I_LO
+Text Label 11650 6475 0    50   ~ 0
+Q_LO
+Wire Wire Line
+	11650 6475 11850 6475
+Connection ~ 12300 5875
+Wire Wire Line
+	12300 5875 12300 5625
+Connection ~ 12300 5275
+Wire Wire Line
+	12300 5225 12300 5275
+$Comp
+L SDRReciever-rescue:+3.3V-power #PWR02
+U 1 1 5EA05EBD
+P 9300 5575
+F 0 "#PWR02" H 9300 5425 50  0001 C CNN
+F 1 "+3.3V" H 9315 5748 50  0000 C CNN
+F 2 "" H 9300 5575 50  0001 C CNN
+F 3 "" H 9300 5575 50  0001 C CNN
+	1    9300 5575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 5575 9300 5625
+Wire Wire Line
+	9300 5625 9500 5625
+Wire Wire Line
+	9500 5625 9500 5775
+Connection ~ 9300 5625
+Wire Wire Line
+	9300 5625 9300 5775
+Wire Wire Line
+	9500 5625 9650 5625
+Connection ~ 9500 5625
+$Comp
+L SDRReciever-rescue:C-Device C4
+U 1 1 5EA0EEB1
+P 9800 5625
+F 0 "C4" V 9548 5625 50  0000 C CNN
+F 1 "0.1u" V 9639 5625 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 9838 5475 50  0001 C CNN
+F 3 "~" H 9800 5625 50  0001 C CNN
+	1    9800 5625
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR03
+U 1 1 5EA0FA7A
+P 9950 5675
+F 0 "#PWR03" H 9950 5425 50  0001 C CNN
+F 1 "GND" H 9955 5502 50  0000 C CNN
+F 2 "" H 9950 5675 50  0001 C CNN
+F 3 "" H 9950 5675 50  0001 C CNN
+	1    9950 5675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5625 9950 5675
+Connection ~ 12300 5625
+Wire Wire Line
+	12300 5625 12300 5275
+Wire Wire Line
+	12650 6525 12650 6575
+$Comp
+L SDRReciever-rescue:GND-power #PWR05
+U 1 1 5EA235DF
+P 12650 6575
+F 0 "#PWR05" H 12650 6325 50  0001 C CNN
+F 1 "GND" H 12655 6402 50  0000 C CNN
+F 2 "" H 12650 6575 50  0001 C CNN
+F 3 "" H 12650 6575 50  0001 C CNN
+	1    12650 6575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2400 2000 2450
+$Comp
+L SDRReciever-rescue:GND-power #PWR01
+U 1 1 5EA45FBD
+P 2000 2450
+F 0 "#PWR01" H 2000 2200 50  0001 C CNN
+F 1 "GND" H 2005 2277 50  0000 C CNN
+F 2 "" H 2000 2450 50  0001 C CNN
+F 3 "" H 2000 2450 50  0001 C CNN
+	1    2000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR06
+U 1 1 5EA697D6
+P 8450 3200
+F 0 "#PWR06" H 8450 2950 50  0001 C CNN
+F 1 "GND" H 8455 3027 50  0000 C CNN
+F 2 "" H 8450 3200 50  0001 C CNN
+F 3 "" H 8450 3200 50  0001 C CNN
+	1    8450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5925 8900 5975
+Wire Wire Line
+	8900 6225 8900 6175
+Text Notes 8875 1775 0    50   ~ 0
+10.7 kHz IF
+$Comp
+L SDRReciever-rescue:GND-power #PWR015
+U 1 1 5EAD8F42
+P 9400 6775
+F 0 "#PWR015" H 9400 6525 50  0001 C CNN
+F 1 "GND" H 9405 6602 50  0000 C CNN
+F 2 "" H 9400 6775 50  0001 C CNN
+F 3 "" H 9400 6775 50  0001 C CNN
+	1    9400 6775
+	1    0    0    -1  
+$EndComp
+Connection ~ 12300 6075
+Wire Wire Line
+	12300 6075 12300 5875
+Wire Wire Line
+	12300 6075 12300 6675
+Wire Wire Line
+	11850 6475 11850 6775
+Wire Wire Line
+	10800 6375 11050 6375
+Wire Wire Line
+	10800 6375 10800 5575
+Connection ~ 10800 5575
+Wire Wire Line
+	10800 5575 11050 5575
+Wire Wire Line
+	10900 6775 10900 5475
+Wire Wire Line
+	10900 5475 11050 5475
+Wire Wire Line
+	10900 6775 11850 6775
+Text Label 8250 6800 2    50   ~ 0
+SDA
+Text Label 8250 6700 2    50   ~ 0
+SCL
+Text Notes 10050 5475 0    50   ~ 0
+With 5-10MHz, \nCLK_0 will \nbe around \n20 - 40 MHz
+$Comp
+L SDRReciever-rescue:Jumper_NC_Small-Device JP2
+U 1 1 5EB6D8A5
+P 17900 5450
+F 0 "JP2" H 17750 5275 50  0000 R CNN
+F 1 "Jumper_NC_Small" H 17975 5375 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 17900 5450 50  0001 C CNN
+F 3 "~" H 17900 5450 50  0001 C CNN
+	1    17900 5450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 2200 2750 2400
+Wire Wire Line
+	4250 2200 4250 2400
+Wire Wire Line
+	4050 2200 4050 2400
+Connection ~ 4050 2400
+$Comp
+L SDRReciever-rescue:C-Device C2
+U 1 1 5EBA63BC
+P 3300 1900
+F 0 "C2" V 3150 1900 50  0000 R CNN
+F 1 "910pF" V 3050 1950 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 3338 1750 50  0001 C CNN
+F 3 "~" H 3300 1900 50  0001 C CNN
+	1    3300 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SDRReciever-rescue:L-Device L2
+U 1 1 5EBA7E50
+P 3700 1900
+F 0 "L2" V 3900 1875 50  0000 C CNN
+F 1 "560nH" V 3800 1800 50  0000 C CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L10.0mm_W5.0mm_P5.08mm" H 3700 1900 50  0001 C CNN
+F 3 "http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf" H 3700 1900 50  0001 C CNN
+	1    3700 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SDRReciever-rescue:L-Device L3
+U 1 1 5EBAE36F
+P 5000 1900
+F 0 "L3" V 5190 1900 50  0000 C CNN
+F 1 "3.6uH" V 5099 1900 50  0000 C CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm" H 5000 1900 50  0001 C CNN
+F 3 "http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf" H 5000 1900 50  0001 C CNN
+	1    5000 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 1900 3550 1900
+Wire Wire Line
+	3850 1900 4050 1900
+Connection ~ 4050 1900
+Wire Wire Line
+	4050 1900 4250 1900
+Connection ~ 4250 1900
+Wire Wire Line
+	4250 1900 4450 1900
+$Comp
+L SDRReciever-rescue:C-Device C3
+U 1 1 5EBAF176
+P 4600 1900
+F 0 "C3" V 4450 1900 50  0000 R CNN
+F 1 "150pF" V 4350 1950 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4638 1750 50  0001 C CNN
+F 3 "~" H 4600 1900 50  0001 C CNN
+	1    4600 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 1900 4850 1900
+Wire Wire Line
+	5150 1900 5300 1900
+Text Notes 5500 2125 0    50   ~ 0
+ Tunable\n2.15V Bias
+$Comp
+L SDRReciever-rescue:C-Device C11
+U 1 1 5EC286E8
+P 5700 1300
+F 0 "C11" V 5950 1225 50  0000 L CNN
+F 1 "0.1u" V 5875 1225 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 5738 1150 50  0001 C CNN
+F 3 "~" H 5700 1300 50  0001 C CNN
+	1    5700 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR016
+U 1 1 5EC29C77
+P 6075 1650
+F 0 "#PWR016" H 6075 1400 50  0001 C CNN
+F 1 "GND" H 6075 1800 50  0000 C CNN
+F 2 "" H 6075 1650 50  0001 C CNN
+F 3 "" H 6075 1650 50  0001 C CNN
+	1    6075 1650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 15850 6050
+NoConn ~ 15950 6050
+NoConn ~ 16050 6050
+NoConn ~ 16150 6050
+NoConn ~ 16250 6050
+NoConn ~ 16350 6050
+NoConn ~ 16450 6050
+NoConn ~ 16550 6050
+NoConn ~ 16650 6050
+NoConn ~ 16750 6050
+NoConn ~ 16850 6050
+NoConn ~ 16950 6050
+NoConn ~ 17050 6050
+NoConn ~ 17150 6050
+NoConn ~ 17150 5050
+NoConn ~ 17050 5050
+NoConn ~ 16750 5050
+NoConn ~ 16650 5050
+NoConn ~ 16550 5050
+NoConn ~ 16450 5050
+NoConn ~ 16250 5050
+NoConn ~ 15950 5050
+NoConn ~ 15850 5050
+NoConn ~ 15450 5650
+$Comp
+L SDRReciever-rescue:+5V-power #PWR022
+U 1 1 5ECD9DAC
+P 15050 5300
+F 0 "#PWR022" H 15050 5150 50  0001 C CNN
+F 1 "+5V" H 15200 5350 50  0000 C CNN
+F 2 "" H 15050 5300 50  0001 C CNN
+F 3 "" H 15050 5300 50  0001 C CNN
+	1    15050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:+3.3V-power #PWR021
+U 1 1 5ECDAE77
+P 14900 5300
+F 0 "#PWR021" H 14900 5150 50  0001 C CNN
+F 1 "+3.3V" H 14700 5350 50  0000 C CNN
+F 2 "" H 14900 5300 50  0001 C CNN
+F 3 "" H 14900 5300 50  0001 C CNN
+	1    14900 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C13
+U 1 1 5ECE7838
+P 15200 5800
+F 0 "C13" H 15315 5846 50  0000 L CNN
+F 1 "0.1u" H 15315 5755 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 15238 5650 50  0001 C CNN
+F 3 "~" H 15200 5800 50  0001 C CNN
+	1    15200 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C12
+U 1 1 5ECE83AE
+P 14900 5800
+F 0 "C12" H 14600 5850 50  0000 L CNN
+F 1 "0.1u" H 14600 5750 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 14938 5650 50  0001 C CNN
+F 3 "~" H 14900 5800 50  0001 C CNN
+	1    14900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR020
+U 1 1 5ECE8A37
+P 14900 5950
+F 0 "#PWR020" H 14900 5700 50  0001 C CNN
+F 1 "GND" H 14905 5777 50  0000 C CNN
+F 2 "" H 14900 5950 50  0001 C CNN
+F 3 "" H 14900 5950 50  0001 C CNN
+	1    14900 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR023
+U 1 1 5ECE972B
+P 15200 5950
+F 0 "#PWR023" H 15200 5700 50  0001 C CNN
+F 1 "GND" H 15205 5777 50  0000 C CNN
+F 2 "" H 15200 5950 50  0001 C CNN
+F 3 "" H 15200 5950 50  0001 C CNN
+	1    15200 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C14
+U 1 1 5ED141A9
+P 13350 5775
+F 0 "C14" H 13465 5821 50  0000 L CNN
+F 1 "0.1u" H 13465 5730 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 13388 5625 50  0001 C CNN
+F 3 "~" H 13350 5775 50  0001 C CNN
+	1    13350 5775
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR030
+U 1 1 5ED1522F
+P 13350 5925
+F 0 "#PWR030" H 13350 5675 50  0001 C CNN
+F 1 "GND" H 13355 5752 50  0000 C CNN
+F 2 "" H 13350 5925 50  0001 C CNN
+F 3 "" H 13350 5925 50  0001 C CNN
+	1    13350 5925
+	1    0    0    -1  
+$EndComp
+Text Label 7850 2500 0    50   ~ 0
+I_LO
+Text Label 7850 2600 0    50   ~ 0
+Q_LO
+$Comp
+L SDRReciever-rescue:C-Device C10
+U 1 1 5E9860CA
+P 8200 1600
+F 0 "C10" V 7950 1550 50  0000 L CNN
+F 1 "0.1u" V 8050 1500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 8238 1450 50  0001 C CNN
+F 3 "~" H 8200 1600 50  0001 C CNN
+	1    8200 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR027
+U 1 1 5E9860D0
+P 8050 1600
+F 0 "#PWR027" H 8050 1350 50  0001 C CNN
+F 1 "GND" H 7900 1550 50  0000 C CNN
+F 2 "" H 8050 1600 50  0001 C CNN
+F 3 "" H 8050 1600 50  0001 C CNN
+	1    8050 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1500 8450 1600
+Wire Wire Line
+	8350 1600 8450 1600
+Connection ~ 8450 1600
+Text Notes 16525 2300 0    50   ~ 0
+Full Scale Input \nSignal Level Typ: 1.0 Vrms\nInput R = 55kΩ.
+$Comp
+L SDRReciever-rescue:+5V-power #PWR019
+U 1 1 5E9B0D3C
+P 2575 4025
+F 0 "#PWR019" H 2575 3875 50  0001 C CNN
+F 1 "+5V" H 2590 4198 50  0000 C CNN
+F 2 "" H 2575 4025 50  0001 C CNN
+F 3 "" H 2575 4025 50  0001 C CNN
+	1    2575 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R1
+U 1 1 5E9B0D42
+P 2575 4325
+F 0 "R1" H 2645 4371 50  0000 L CNN
+F 1 "1k" H 2645 4280 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2505 4325 50  0001 C CNN
+F 3 "~" H 2575 4325 50  0001 C CNN
+	1    2575 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 4475 2575 4575
+Wire Wire Line
+	2575 4975 2575 5025
+Text Notes 5325 4550 0    50   ~ 0
+2.15V Biased\nAnalog Ground
+$Comp
+L SDRReciever-rescue:GND-power #PWR024
+U 1 1 5E9B0D63
+P 2575 5075
+F 0 "#PWR024" H 2575 4825 50  0001 C CNN
+F 1 "GND" H 2580 4902 50  0000 C CNN
+F 2 "" H 2575 5075 50  0001 C CNN
+F 3 "" H 2575 5075 50  0001 C CNN
+	1    2575 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 4575 2725 4575
+Connection ~ 2575 4575
+Wire Wire Line
+	2575 4575 2575 4675
+$Comp
+L SDRReciever-rescue:C-Device C9
+U 1 1 5E9C5A51
+P 2575 4825
+F 0 "C9" V 2323 4825 50  0000 C CNN
+F 1 "10uF" V 2414 4825 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2613 4675 50  0001 C CNN
+F 3 "~" H 2575 4825 50  0001 C CNN
+	1    2575 4825
+	-1   0    0    1   
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R3
+U 1 1 5E9FFD76
+P 11325 1900
+F 0 "R3" H 11395 1946 50  0000 L CNN
+F 1 "1k" H 11395 1855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 11255 1900 50  0001 C CNN
+F 3 "~" H 11325 1900 50  0001 C CNN
+	1    11325 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R4
+U 1 1 5EA0B264
+P 11325 3200
+F 0 "R4" H 11395 3246 50  0000 L CNN
+F 1 "1k" H 11395 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 11255 3200 50  0001 C CNN
+F 3 "~" H 11325 3200 50  0001 C CNN
+	1    11325 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11625 3100 11625 3050
+Wire Wire Line
+	11625 3050 11325 3050
+Wire Wire Line
+	11325 3350 11625 3350
+$Comp
+L SDRReciever-rescue:GND-power #PWR034
+U 1 1 5EA2BCC6
+P 11925 3600
+F 0 "#PWR034" H 11925 3350 50  0001 C CNN
+F 1 "GND" H 11930 3427 50  0000 C CNN
+F 2 "" H 11925 3600 50  0001 C CNN
+F 3 "" H 11925 3600 50  0001 C CNN
+	1    11925 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR032
+U 1 1 5EA2CBD0
+P 11925 2300
+F 0 "#PWR032" H 11925 2050 50  0001 C CNN
+F 1 "GND" H 11725 2300 50  0000 C CNN
+F 2 "" H 11925 2300 50  0001 C CNN
+F 3 "" H 11925 2300 50  0001 C CNN
+	1    11925 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GNDA-power #PWR036
+U 1 1 5EA2D79A
+P 12125 3500
+F 0 "#PWR036" H 12125 3250 50  0001 C CNN
+F 1 "GNDA" H 12130 3327 50  0000 C CNN
+F 2 "" H 12125 3500 50  0001 C CNN
+F 3 "" H 12125 3500 50  0001 C CNN
+	1    12125 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GNDA-power #PWR035
+U 1 1 5EA2E487
+P 12125 2200
+F 0 "#PWR035" H 12125 1950 50  0001 C CNN
+F 1 "GNDA" H 12130 2027 50  0000 C CNN
+F 2 "" H 12125 2200 50  0001 C CNN
+F 3 "" H 12125 2200 50  0001 C CNN
+	1    12125 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C7
+U 1 1 5EA30854
+P 10975 2400
+F 0 "C7" H 11125 2450 50  0000 L CNN
+F 1 "100p" H 11090 2355 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 11013 2250 50  0001 C CNN
+F 3 "~" H 10975 2400 50  0001 C CNN
+	1    10975 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C8
+U 1 1 5EA30B61
+P 10975 3700
+F 0 "C8" H 11125 3750 50  0000 L CNN
+F 1 "100p" H 11075 3650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 11013 3550 50  0001 C CNN
+F 3 "~" H 10975 3700 50  0001 C CNN
+	1    10975 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C6
+U 1 1 5EA312A8
+P 10625 3700
+F 0 "C6" H 10375 3750 50  0000 L CNN
+F 1 "100p" H 10325 3650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 10663 3550 50  0001 C CNN
+F 3 "~" H 10625 3700 50  0001 C CNN
+	1    10625 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R9
+U 1 1 5EA3F5A5
+P 15875 2700
+F 0 "R9" V 15975 2650 50  0000 L CNN
+F 1 "100" V 16075 2650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 15805 2700 50  0001 C CNN
+F 3 "~" H 15875 2700 50  0001 C CNN
+	1    15875 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R6
+U 1 1 5EA403F6
+P 15875 2350
+F 0 "R6" V 16075 2300 50  0000 L CNN
+F 1 "100" V 15975 2250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 15805 2350 50  0001 C CNN
+F 3 "~" H 15875 2350 50  0001 C CNN
+	1    15875 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	16125 2450 16425 2450
+Wire Wire Line
+	16125 2550 16425 2550
+Text Notes 9750 1175 0    50   ~ 0
+Low Noise Instrumentation Amplifiers\nGain Controlled by 1 Resistor. J18 and \nJ19 used for testing for desired gain
+$Comp
+L SDRReciever-rescue:R-Device R5
+U 1 1 5EA72DEC
+P 10425 1700
+F 0 "R5" V 10218 1700 50  0000 C CNN
+F 1 "50" V 10309 1700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10355 1700 50  0001 C CNN
+F 3 "~" H 10425 1700 50  0001 C CNN
+	1    10425 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C5
+U 1 1 5E972924
+P 10625 2400
+F 0 "C5" H 10375 2450 50  0000 L CNN
+F 1 "100p" H 10325 2350 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 10663 2250 50  0001 C CNN
+F 3 "~" H 10625 2400 50  0001 C CNN
+	1    10625 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R10
+U 1 1 5EAB1A22
+P 10425 2100
+F 0 "R10" V 10218 2100 50  0000 C CNN
+F 1 "50" V 10309 2100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10355 2100 50  0001 C CNN
+F 3 "~" H 10425 2100 50  0001 C CNN
+	1    10425 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR09
+U 1 1 5E9775A8
+P 10625 3850
+F 0 "#PWR09" H 10625 3600 50  0001 C CNN
+F 1 "GND" H 10475 3750 50  0000 C CNN
+F 2 "" H 10625 3850 50  0001 C CNN
+F 3 "" H 10625 3850 50  0001 C CNN
+	1    10625 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R11
+U 1 1 5EACF577
+P 10425 3000
+F 0 "R11" V 10218 3000 50  0000 C CNN
+F 1 "50" V 10309 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10355 3000 50  0001 C CNN
+F 3 "~" H 10425 3000 50  0001 C CNN
+	1    10425 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R12
+U 1 1 5EACFAEA
+P 10425 3400
+F 0 "R12" V 10218 3400 50  0000 C CNN
+F 1 "50" V 10309 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10355 3400 50  0001 C CNN
+F 3 "~" H 10425 3400 50  0001 C CNN
+	1    10425 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10575 1700 10825 1700
+$Comp
+L SDRReciever-rescue:PWR_FLAG-power #FLG0102
+U 1 1 5EB23ACA
+P 2575 5025
+F 0 "#FLG0102" H 2575 5100 50  0001 C CNN
+F 1 "PWR_FLAG" V 2675 5275 50  0000 C CNN
+F 2 "" H 2575 5025 50  0001 C CNN
+F 3 "~" H 2575 5025 50  0001 C CNN
+	1    2575 5025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17450 5450 17550 5450
+Wire Wire Line
+	17450 5550 17550 5550
+Wire Wire Line
+	17550 5550 17550 5450
+Connection ~ 17550 5450
+Wire Wire Line
+	2575 4025 2575 4125
+$Comp
+L SDRReciever-rescue:PWR_FLAG-power #FLG0101
+U 1 1 5EB8078F
+P 17550 5450
+F 0 "#FLG0101" H 17550 5525 50  0001 C CNN
+F 1 "PWR_FLAG" H 17375 5600 50  0000 L CNN
+F 2 "" H 17550 5450 50  0001 C CNN
+F 3 "~" H 17550 5450 50  0001 C CNN
+	1    17550 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:74HC74-74xx U2
+U 3 1 5E9D68F1
+P 12650 6125
+F 0 "U2" H 12420 6171 50  0000 R CNN
+F 1 "74AC74" H 12420 6080 50  0000 R CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 12650 6125 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ahc74.pdf" H 12650 6125 50  0001 C CNN
+	3    12650 6125
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 5625 12650 5625
+Wire Wire Line
+	12650 5625 12650 5725
+Connection ~ 12650 5625
+Wire Wire Line
+	12650 5625 13350 5625
+Wire Wire Line
+	11625 3300 11625 3350
+$Comp
+L SDRReciever-rescue:INA821ID-INA821ID U4
+U 1 1 5EA1D7F9
+P 12025 1900
+F 0 "U4" H 11875 1950 50  0000 L CNN
+F 1 "INA821ID" H 11775 1850 50  0000 L CNN
+F 2 "import_footprint:SOIC127P600X175-8N" H 12025 1900 50  0001 L BNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina821.pdf?HQS=TI-null-null-mousermode-df-pf-null-wwe&DCM=yes&ref_url=https%3A%2F%2Fwww.mouser.com%2F&distId=26" H 12025 1900 50  0001 L BNN
+F 4 "1.75mm" H 12025 1900 50  0001 L BNN "Field4"
+F 5 "Texas Instruments" H 12025 1900 50  0001 L BNN "Field5"
+F 6 "IPC-7351B" H 12025 1900 50  0001 L BNN "Field6"
+	1    12025 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11625 2000 11625 2050
+Wire Wire Line
+	11325 2050 11625 2050
+Wire Wire Line
+	11625 1750 11625 1800
+Wire Wire Line
+	11325 1750 11625 1750
+Text Notes 9750 1275 0    50   ~ 0
+Gain EQ: 1 + (49.4 kOhm / RG)
+$Comp
+L SDRReciever-rescue:1N914-Diode D2
+U 1 1 5EA1DE64
+P 2750 2050
+F 0 "D2" V 2796 1971 50  0000 R CNN
+F 1 "1N914" V 2705 1971 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2750 1875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 2750 2050 50  0001 C CNN
+	1    2750 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SDRReciever-rescue:Crystal-Device Y1
+U 1 1 5EA4F383
+P 8650 6075
+F 0 "Y1" V 8600 5775 50  0000 L CNN
+F 1 "ATS250" V 8700 5675 50  0000 L CNN
+F 2 "Crystal:Crystal_HC49-U_Vertical" H 8650 6075 50  0001 C CNN
+F 3 "https://www.ctscorp.com/wp-content/uploads/ATS-ATSSM.pdf" H 8650 6075 50  0001 C CNN
+	1    8650 6075
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J4
+U 1 1 5EA8B6E9
+P 5300 2100
+F 0 "J4" V 5225 1900 50  0000 L CNN
+F 1 "FIL_O" V 5300 1825 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5300 2100 50  0001 C CNN
+F 3 "~" H 5300 2100 50  0001 C CNN
+	1    5300 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J10
+U 1 1 5EA8CF7A
+P 10825 1500
+F 0 "J10" V 10825 1750 50  0000 R CNN
+F 1 "I_0" V 10725 1750 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10825 1500 50  0001 C CNN
+F 3 "~" H 10825 1500 50  0001 C CNN
+	1    10825 1500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10825 1700
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J11
+U 1 1 5EA91043
+P 10825 1900
+F 0 "J11" V 10825 2150 50  0000 R CNN
+F 1 "I_180" V 10725 2200 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10825 1900 50  0001 C CNN
+F 3 "~" H 10825 1900 50  0001 C CNN
+	1    10825 1900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10825 2100
+Wire Wire Line
+	10825 2100 11625 2100
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J12
+U 1 1 5EA91402
+P 10825 2800
+F 0 "J12" V 10825 3050 50  0000 R CNN
+F 1 "Q_90" V 10725 3100 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10825 2800 50  0001 C CNN
+F 3 "~" H 10825 2800 50  0001 C CNN
+	1    10825 2800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10825 3000
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J13
+U 1 1 5EA918E7
+P 10825 3200
+F 0 "J13" V 10825 3450 50  0000 R CNN
+F 1 "Q_270" V 10725 3500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10825 3200 50  0001 C CNN
+F 3 "~" H 10825 3200 50  0001 C CNN
+	1    10825 3200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10825 3400
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J14
+U 1 1 5EA91CC9
+P 12475 2100
+F 0 "J14" V 12575 2050 50  0000 L CNN
+F 1 "I_OUT" V 12675 2050 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 12475 2100 50  0001 C CNN
+F 3 "~" H 12475 2100 50  0001 C CNN
+	1    12475 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J15
+U 1 1 5EA92D6E
+P 12475 3000
+F 0 "J15" V 12675 3050 50  0000 R CNN
+F 1 "Q_OUT" V 12575 3050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 12475 3000 50  0001 C CNN
+F 3 "~" H 12475 3000 50  0001 C CNN
+	1    12475 3000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 12475 3200
+Wire Wire Line
+	12475 3200 12425 3200
+Wire Wire Line
+	12425 1900 12475 1900
+Connection ~ 12475 1900
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J5
+U 1 1 5EAB0E28
+P 10100 6275
+F 0 "J5" H 10180 6317 50  0000 L CNN
+F 1 "CLK_1" H 10180 6226 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10100 6275 50  0001 C CNN
+F 3 "~" H 10100 6275 50  0001 C CNN
+	1    10100 6275
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J6
+U 1 1 5EAB170F
+P 10100 6475
+F 0 "J6" H 10180 6517 50  0000 L CNN
+F 1 "CLK_2" H 10180 6426 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10100 6475 50  0001 C CNN
+F 3 "~" H 10100 6475 50  0001 C CNN
+	1    10100 6475
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J7
+U 1 1 5EAC398F
+P 10800 5375
+F 0 "J7" V 11000 5425 50  0000 R CNN
+F 1 "CLK_0" V 10900 5500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10800 5375 50  0001 C CNN
+F 3 "~" H 10800 5375 50  0001 C CNN
+	1    10800 5375
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 6075 10400 6075
+Wire Wire Line
+	11350 5275 12300 5275
+Wire Wire Line
+	11350 5875 12300 5875
+Wire Wire Line
+	11350 6075 12300 6075
+Wire Wire Line
+	11350 6675 12300 6675
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J8
+U 1 1 5EAFA8DE
+P 12000 5675
+F 0 "J8" H 11950 5775 50  0000 L CNN
+F 1 "I_LO" H 11900 5575 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 12000 5675 50  0001 C CNN
+F 3 "~" H 12000 5675 50  0001 C CNN
+	1    12000 5675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 5475 12100 5475
+Wire Wire Line
+	11000 5975 12100 5975
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J9
+U 1 1 5EB14DFD
+P 12050 6475
+F 0 "J9" H 12000 6575 50  0000 L CNN
+F 1 "Q_LO" H 11900 6375 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 12050 6475 50  0001 C CNN
+F 3 "~" H 12050 6475 50  0001 C CNN
+	1    12050 6475
+	1    0    0    -1  
+$EndComp
+Connection ~ 11850 6475
+Wire Wire Line
+	11650 5675 11800 5675
+$Comp
+L SDRReciever-rescue:C-Device C17
+U 1 1 5EA7D591
+P 12125 1400
+F 0 "C17" V 12275 1350 50  0000 L CNN
+F 1 "0.1u" V 12375 1350 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 12163 1250 50  0001 C CNN
+F 3 "~" H 12125 1400 50  0001 C CNN
+	1    12125 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C18
+U 1 1 5EA7DD9E
+P 12125 2700
+F 0 "C18" V 12275 2650 50  0000 L CNN
+F 1 "0.1u" V 12375 2650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 12163 2550 50  0001 C CNN
+F 3 "~" H 12125 2700 50  0001 C CNN
+	1    12125 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11925 1300 11925 1400
+Wire Wire Line
+	11925 1400 11925 1500
+Connection ~ 11925 1400
+Wire Wire Line
+	11925 2600 11925 2700
+Wire Wire Line
+	11925 1400 11975 1400
+Wire Wire Line
+	11925 2700 11975 2700
+Connection ~ 11925 2700
+Wire Wire Line
+	11925 2700 11925 2800
+$Comp
+L SDRReciever-rescue:GND-power #PWR0101
+U 1 1 5EAB87B0
+P 12275 1400
+F 0 "#PWR0101" H 12275 1150 50  0001 C CNN
+F 1 "GND" H 12275 1450 50  0000 C CNN
+F 2 "" H 12275 1400 50  0001 C CNN
+F 3 "" H 12275 1400 50  0001 C CNN
+	1    12275 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR0102
+U 1 1 5EAB8FF0
+P 12275 2700
+F 0 "#PWR0102" H 12275 2450 50  0001 C CNN
+F 1 "GND" H 12275 2750 50  0000 C CNN
+F 2 "" H 12275 2700 50  0001 C CNN
+F 3 "" H 12275 2700 50  0001 C CNN
+	1    12275 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:SN74CBT3253-Analog_Switch U3
+U 1 1 5EAD379E
+P 8450 2500
+F 0 "U3" H 8750 3150 50  0000 C CNN
+F 1 "SN74CBT3253" H 8750 3050 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8450 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74cbt3253" H 8450 2500 50  0001 C CNN
+	1    8450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1800 5700 1900
+Wire Wire Line
+	5300 1900 5700 1900
+Connection ~ 5300 1900
+Connection ~ 5700 1900
+Wire Wire Line
+	7750 2100 8050 2100
+Wire Wire Line
+	8050 2200 7750 2200
+Wire Wire Line
+	7750 2200 7750 2150
+Wire Wire Line
+	8450 3100 8450 3200
+Wire Wire Line
+	7950 2900 8050 2900
+Wire Wire Line
+	8050 2800 7950 2800
+Wire Wire Line
+	7950 2800 7950 2900
+Connection ~ 7950 2900
+Wire Wire Line
+	7950 2900 7950 3000
+Wire Wire Line
+	8450 1600 8450 1900
+Wire Wire Line
+	7850 2500 8050 2500
+Wire Wire Line
+	8050 2600 7850 2600
+Connection ~ 2000 2400
+Wire Wire Line
+	2000 2400 2350 2400
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J3
+U 1 1 5EA8A5D4
+P 2350 1700
+F 0 "J3" V 2314 1612 50  0000 R CNN
+F 1 "FIL_I" V 2223 1612 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2350 1700 50  0001 C CNN
+F 3 "~" H 2350 1700 50  0001 C CNN
+	1    2350 1700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2350 1900
+$Comp
+L SDRReciever-rescue:1N914-Diode D1
+U 1 1 5EA1C428
+P 2350 2050
+F 0 "D1" V 2304 2129 50  0000 L CNN
+F 1 "1N914" V 2395 2129 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2350 1875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 2350 2050 50  0001 C CNN
+	1    2350 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 1900 2350 1900
+Wire Wire Line
+	2350 2200 2350 2400
+Wire Wire Line
+	2000 2350 2000 2400
+Wire Wire Line
+	2000 2100 2000 2150
+$Comp
+L SDRReciever-rescue:Jumper_NC_Small-Device JP1
+U 1 1 5EB59EC6
+P 2000 2250
+F 0 "JP1" V 2046 2203 50  0000 R CNN
+F 1 "Jumper_NC_Small" V 1955 2203 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2000 2250 50  0001 C CNN
+F 3 "~" H 2000 2250 50  0001 C CNN
+	1    2000 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SDRReciever-rescue:Conn_Coaxial-Connector J1
+U 1 1 5E935447
+P 2000 1900
+F 0 "J1" H 2350 2100 50  0000 C CNN
+F 1 "Conn_Coaxial" H 2350 2000 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 2000 1900 50  0001 C CNN
+F 3 " ~" H 2000 1900 50  0001 C CNN
+	1    2000 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 6075 10400 5575
+Wire Wire Line
+	10400 5575 10800 5575
+Wire Wire Line
+	9450 1700 9450 2100
+Wire Wire Line
+	8850 2100 9450 2100
+Wire Wire Line
+	8850 2200 9550 2200
+Wire Wire Line
+	9550 2200 9550 2700
+Wire Wire Line
+	8850 2300 9650 2300
+Wire Wire Line
+	9650 2300 9650 2800
+Wire Wire Line
+	8850 2400 9750 2400
+Wire Wire Line
+	9750 2400 9750 2100
+Wire Wire Line
+	8850 2600 9450 2600
+Wire Wire Line
+	9450 2600 9450 2100
+Connection ~ 9450 2100
+Wire Wire Line
+	8850 2700 9550 2700
+Wire Wire Line
+	8850 2800 9650 2800
+Wire Wire Line
+	9550 2700 9550 3000
+Connection ~ 9550 2700
+Wire Wire Line
+	9650 2800 9650 3400
+Connection ~ 9650 2800
+Wire Wire Line
+	8850 2900 9750 2900
+Wire Wire Line
+	9750 2900 9750 2400
+Connection ~ 9750 2400
+Wire Wire Line
+	12475 3200 12825 3200
+Wire Wire Line
+	10575 2100 10625 2100
+Wire Wire Line
+	10825 1700 10975 1700
+Wire Wire Line
+	10625 2100 10625 2250
+Connection ~ 10625 2100
+Wire Wire Line
+	10625 2100 10825 2100
+Wire Wire Line
+	10975 2250 10975 1700
+Connection ~ 10975 1700
+Wire Wire Line
+	10975 1700 11625 1700
+Wire Wire Line
+	7750 2150 7600 2150
+Connection ~ 7750 2150
+Wire Wire Line
+	7750 2150 7750 2100
+Text Label 7600 2150 2    50   ~ 0
+BPF_OUT
+Wire Wire Line
+	5700 1900 6200 1900
+Text Label 6200 1900 0    50   ~ 0
+BPF_OUT
+$Comp
+L SDRReciever-rescue:+3.3V-power #PWR04
+U 1 1 5EA025B6
+P 12300 5225
+F 0 "#PWR04" H 12300 5075 50  0001 C CNN
+F 1 "+3.3V" H 12315 5398 50  0000 C CNN
+F 2 "" H 12300 5225 50  0001 C CNN
+F 3 "" H 12300 5225 50  0001 C CNN
+	1    12300 5225
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPA213FPZ:OP213FPZ U6
+U 1 1 5EE864BE
+P 14475 2500
+F 0 "U6" H 14925 2550 60  0000 C CNN
+F 1 "OP213FPZ" H 14925 2425 60  0000 C CNN
+F 2 "Imported_Footprints:OP213FPZ" H 15675 2740 60  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP113_213_413.pdf" H 14475 2500 60  0001 C CNN
+	1    14475 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R15
+U 1 1 5EEDD9FD
+P 13575 2450
+F 0 "R15" V 13368 2450 50  0000 C CNN
+F 1 "15k" V 13459 2450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 13505 2450 50  0001 C CNN
+F 3 "~" H 13575 2450 50  0001 C CNN
+	1    13575 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R13
+U 1 1 5EEF141F
+P 13075 2450
+F 0 "R13" V 12868 2450 50  0000 C CNN
+F 1 "8.2k" V 12959 2450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 13005 2450 50  0001 C CNN
+F 3 "~" H 13075 2450 50  0001 C CNN
+	1    13075 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R16
+U 1 1 5EEFA8EB
+P 13575 2600
+F 0 "R16" V 13675 2600 50  0000 C CNN
+F 1 "15k" V 13775 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 13505 2600 50  0001 C CNN
+F 3 "~" H 13575 2600 50  0001 C CNN
+	1    13575 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R14
+U 1 1 5EEFB699
+P 13075 2600
+F 0 "R14" V 13175 2600 50  0000 C CNN
+F 1 "8.2k" V 13275 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 13005 2600 50  0001 C CNN
+F 3 "~" H 13075 2600 50  0001 C CNN
+	1    13075 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C22
+U 1 1 5EEFC24F
+P 13975 2800
+F 0 "C22" H 14125 2750 50  0000 L CNN
+F 1 "100p" H 14075 2650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 14013 2650 50  0001 C CNN
+F 3 "~" H 13975 2800 50  0001 C CNN
+	1    13975 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C21
+U 1 1 5EF56413
+P 13975 2250
+F 0 "C21" H 13725 2050 50  0000 L CNN
+F 1 "100p" H 13675 2150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 14013 2100 50  0001 C CNN
+F 3 "~" H 13975 2250 50  0001 C CNN
+	1    13975 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13225 2450 13325 2450
+Wire Wire Line
+	13225 2600 13325 2600
+Wire Wire Line
+	12925 2450 12825 2450
+Wire Wire Line
+	12475 1900 12825 1900
+$Comp
+L SDRReciever-rescue:C-Device C23
+U 1 1 5EF9B264
+P 14875 2100
+F 0 "C23" V 14625 2050 50  0000 L CNN
+F 1 "0.1u" V 14725 2000 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 14913 1950 50  0001 C CNN
+F 3 "~" H 14875 2100 50  0001 C CNN
+	1    14875 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14675 2000 14675 2100
+Wire Wire Line
+	14675 2100 14675 2200
+Connection ~ 14675 2100
+Wire Wire Line
+	14675 2100 14725 2100
+$Comp
+L SDRReciever-rescue:GND-power #PWR039
+U 1 1 5EF9B26E
+P 15025 2100
+F 0 "#PWR039" H 15025 1850 50  0001 C CNN
+F 1 "GND" H 15025 2150 50  0000 C CNN
+F 2 "" H 15025 2100 50  0001 C CNN
+F 3 "" H 15025 2100 50  0001 C CNN
+	1    15025 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12825 1900 12825 2450
+Wire Wire Line
+	12925 2600 12825 2600
+Wire Wire Line
+	12825 2600 12825 3200
+$Comp
+L SDRReciever-rescue:GND-power #PWR038
+U 1 1 5EFD8827
+P 14675 2850
+F 0 "#PWR038" H 14675 2600 50  0001 C CNN
+F 1 "GND" H 14680 2677 50  0000 C CNN
+F 2 "" H 14675 2850 50  0001 C CNN
+F 3 "" H 14675 2850 50  0001 C CNN
+	1    14675 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR014
+U 1 1 5EFED4A9
+P 13775 2100
+F 0 "#PWR014" H 13775 1850 50  0001 C CNN
+F 1 "GND" H 13780 1927 50  0000 C CNN
+F 2 "" H 13775 2100 50  0001 C CNN
+F 3 "" H 13775 2100 50  0001 C CNN
+	1    13775 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR029
+U 1 1 5EFEDC87
+P 13975 2950
+F 0 "#PWR029" H 13975 2700 50  0001 C CNN
+F 1 "GND" H 13980 2777 50  0000 C CNN
+F 2 "" H 13975 2950 50  0001 C CNN
+F 3 "" H 13975 2950 50  0001 C CNN
+	1    13975 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14375 2250 14325 2250
+Wire Wire Line
+	15175 2350 14875 2350
+Wire Wire Line
+	15175 3300 15175 2700
+Wire Wire Line
+	15175 2700 14875 2700
+Wire Wire Line
+	15175 1750 15175 2350
+$Comp
+L SDRReciever-rescue:C-Device C19
+U 1 1 5F047D43
+P 13575 1750
+F 0 "C19" V 13825 1700 50  0000 L CNN
+F 1 "220pF" V 13725 1650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 13613 1600 50  0001 C CNN
+F 3 "~" H 13575 1750 50  0001 C CNN
+	1    13575 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C20
+U 1 1 5F053B9E
+P 13575 3300
+F 0 "C20" V 13850 3225 50  0000 L CNN
+F 1 "220pF" V 13750 3175 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 13613 3150 50  0001 C CNN
+F 3 "~" H 13575 3300 50  0001 C CNN
+	1    13575 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13425 3300 13325 3300
+Wire Wire Line
+	13325 3300 13325 2600
+Connection ~ 13325 2600
+Wire Wire Line
+	13325 2600 13425 2600
+Wire Wire Line
+	13325 2450 13325 1750
+Wire Wire Line
+	13325 1750 13425 1750
+Connection ~ 13325 2450
+Wire Wire Line
+	13325 2450 13425 2450
+Wire Wire Line
+	13975 2650 13975 2600
+Wire Wire Line
+	13725 3300 14325 3300
+Wire Wire Line
+	14375 2800 14325 2800
+Wire Wire Line
+	14325 2800 14325 3300
+Connection ~ 14325 3300
+Wire Wire Line
+	14325 3300 15175 3300
+Wire Wire Line
+	14325 2250 14325 1750
+Connection ~ 14325 1750
+Wire Wire Line
+	14325 1750 15175 1750
+Wire Wire Line
+	13725 1750 14325 1750
+Connection ~ 13975 2600
+Wire Wire Line
+	13975 2600 14375 2600
+Wire Wire Line
+	13725 2600 13975 2600
+Wire Wire Line
+	13725 2450 13975 2450
+Wire Wire Line
+	13975 2400 13975 2450
+Connection ~ 13975 2450
+Wire Wire Line
+	13975 2450 14375 2450
+Wire Wire Line
+	13775 2100 13975 2100
+Wire Wire Line
+	15175 2350 15275 2350
+Connection ~ 15175 2350
+Wire Wire Line
+	15575 2350 15725 2350
+Wire Wire Line
+	16025 2350 16125 2350
+Wire Wire Line
+	16125 2350 16125 2450
+Wire Wire Line
+	15175 2700 15275 2700
+Connection ~ 15175 2700
+Wire Wire Line
+	15575 2700 15725 2700
+Wire Wire Line
+	16025 2700 16125 2700
+Wire Wire Line
+	16125 2700 16125 2550
+Text Notes 13850 1650 0    50   ~ 0
+Two-Pole Low Pass Filter\nUsing 2-Channel Op Amp\n100kHz Cutoff, no gain
+Wire Wire Line
+	14900 5450 15450 5450
+Wire Wire Line
+	15050 5350 15050 5300
+Wire Wire Line
+	14900 5450 14900 5650
+Connection ~ 14900 5450
+Wire Wire Line
+	15200 5350 15200 5650
+Wire Wire Line
+	14900 5300 14900 5450
+Wire Wire Line
+	15050 5350 15200 5350
+Connection ~ 15200 5350
+Wire Wire Line
+	15200 5350 15450 5350
+Wire Wire Line
+	17550 5450 17800 5450
+Wire Wire Line
+	18000 5450 18000 5600
+$Comp
+L SDRReciever-rescue:Arduino_Nano_v3.x-MCU_Module A1
+U 1 1 5E9514F4
+P 16450 5550
+F 0 "A1" V 16550 5550 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" V 16400 5550 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 16450 5550 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 16450 5550 50  0001 C CNN
+	1    16450 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SDRReciever-rescue:Jumper_NC_Small-Device JP4
+U 1 1 5F36D768
+P 16425 2750
+F 0 "JP4" V 16425 2600 50  0000 R CNN
+F 1 "Jumper_NC_Small" V 16325 2650 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 16425 2750 50  0001 C CNN
+F 3 "~" H 16425 2750 50  0001 C CNN
+	1    16425 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SDRReciever-rescue:PN2222A-Transistor_BJT Q1
+U 1 1 5F391EB1
+P 2925 4575
+F 0 "Q1" H 3115 4621 50  0000 L CNN
+F 1 "PN2222A" H 3115 4530 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3125 4500 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 2925 4575 50  0001 L CNN
+	1    2925 4575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3025 4375 3025 4125
+Wire Wire Line
+	3025 4125 2575 4125
+Connection ~ 2575 4125
+Wire Wire Line
+	2575 4125 2575 4175
+Wire Wire Line
+	2325 4125 2325 4475
+$Comp
+L SDRReciever-rescue:Jumper_NC_Small-Device JP3
+U 1 1 5F3AA315
+P 2325 4575
+F 0 "JP3" V 2425 4875 50  0000 R CNN
+F 1 "Jumper_NC_Small" V 2325 5325 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2325 4575 50  0001 C CNN
+F 3 "~" H 2325 4575 50  0001 C CNN
+	1    2325 4575
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2325 4675 2325 5325
+Wire Wire Line
+	3025 5325 3025 4875
+$Comp
+L SDRReciever-rescue:C-Device C24
+U 1 1 5F3B68ED
+P 4025 4775
+F 0 "C24" H 3925 4675 50  0000 C CNN
+F 1 "0.1u" H 3925 4875 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 4063 4625 50  0001 C CNN
+F 3 "~" H 4025 4775 50  0001 C CNN
+	1    4025 4775
+	-1   0    0    1   
+$EndComp
+Connection ~ 3025 4875
+Wire Wire Line
+	3025 4875 3025 4775
+Connection ~ 2575 5025
+Wire Wire Line
+	2575 5025 2575 5075
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J16
+U 1 1 5F3C5B04
+P 3225 4125
+F 0 "J16" H 3175 4025 50  0000 L CNN
+F 1 "5V" H 3200 3950 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3225 4125 50  0001 C CNN
+F 3 "~" H 3225 4125 50  0001 C CNN
+	1    3225 4125
+	1    0    0    -1  
+$EndComp
+Connection ~ 3025 4125
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J17
+U 1 1 5F3C6CE1
+P 3225 5325
+F 0 "J17" H 3350 5375 50  0000 L CNN
+F 1 "4.3V" H 3325 5300 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3225 5325 50  0001 C CNN
+F 3 "~" H 3225 5325 50  0001 C CNN
+	1    3225 5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4V3Power:+4.3V #PWR040
+U 1 1 5F3E7A8D
+P 3825 4125
+F 0 "#PWR040" H 3825 3975 50  0001 C CNN
+F 1 "+4.3V" H 3840 4298 50  0000 C CNN
+F 2 "" H 3825 4125 50  0001 C CNN
+F 3 "" H 3825 4125 50  0001 C CNN
+	1    3825 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:PWR_FLAG-power #FLG01
+U 1 1 5F3E8DB4
+P 3525 4125
+F 0 "#FLG01" H 3525 4200 50  0001 C CNN
+F 1 "PWR_FLAG" H 3500 4300 50  0000 C CNN
+F 2 "" H 3525 4125 50  0001 C CNN
+F 3 "~" H 3525 4125 50  0001 C CNN
+	1    3525 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4V3Power:+4.3V #PWR028
+U 1 1 5F3FDE18
+P 8450 1500
+F 0 "#PWR028" H 8450 1350 50  0001 C CNN
+F 1 "+4.3V" H 8465 1673 50  0000 C CNN
+F 2 "" H 8450 1500 50  0001 C CNN
+F 3 "" H 8450 1500 50  0001 C CNN
+	1    8450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4V3Power:+4.3V #PWR031
+U 1 1 5F3FE49B
+P 11925 1300
+F 0 "#PWR031" H 11925 1150 50  0001 C CNN
+F 1 "+4.3V" H 11925 1450 50  0000 C CNN
+F 2 "" H 11925 1300 50  0001 C CNN
+F 3 "" H 11925 1300 50  0001 C CNN
+	1    11925 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4V3Power:+4.3V #PWR033
+U 1 1 5F3FEE9D
+P 11925 2600
+F 0 "#PWR033" H 11925 2450 50  0001 C CNN
+F 1 "+4.3V" H 11775 2650 50  0000 C CNN
+F 2 "" H 11925 2600 50  0001 C CNN
+F 3 "" H 11925 2600 50  0001 C CNN
+	1    11925 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4V3Power:+4.3V #PWR037
+U 1 1 5F3FF30E
+P 14675 2000
+F 0 "#PWR037" H 14675 1850 50  0001 C CNN
+F 1 "+4.3V" H 14690 2173 50  0000 C CNN
+F 2 "" H 14675 2000 50  0001 C CNN
+F 3 "" H 14675 2000 50  0001 C CNN
+	1    14675 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4V3Power:+4.3V #PWR017
+U 1 1 5F41254E
+P 5300 1650
+F 0 "#PWR017" H 5300 1500 50  0001 C CNN
+F 1 "+4.3V" H 5315 1823 50  0000 C CNN
+F 2 "" H 5300 1650 50  0001 C CNN
+F 3 "" H 5300 1650 50  0001 C CNN
+	1    5300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3525 4125 3825 4125
+Connection ~ 3825 4125
+$Comp
+L SDRReciever-rescue:R-Device R2
+U 1 1 5F45689B
+P 3825 4275
+F 0 "R2" H 3575 4325 50  0000 L CNN
+F 1 "10k" H 3575 4225 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3755 4275 50  0001 C CNN
+F 3 "~" H 3825 4275 50  0001 C CNN
+	1    3825 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R17
+U 1 1 5F457A51
+P 3825 4775
+F 0 "R17" H 3575 4825 50  0000 L CNN
+F 1 "10k" H 3575 4725 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3755 4775 50  0001 C CNN
+F 3 "~" H 3825 4775 50  0001 C CNN
+	1    3825 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3825 4425 3825 4525
+$Comp
+L SDRReciever-rescue:GND-power #PWR018
+U 1 1 5F463CD6
+P 4625 4925
+F 0 "#PWR018" H 4625 4675 50  0001 C CNN
+F 1 "GND" H 4775 4875 50  0000 C CNN
+F 2 "" H 4625 4925 50  0001 C CNN
+F 3 "" H 4625 4925 50  0001 C CNN
+	1    4625 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GNDA-power #PWR041
+U 1 1 5F47CDCE
+P 5425 4625
+F 0 "#PWR041" H 5425 4375 50  0001 C CNN
+F 1 "GNDA" H 5430 4452 50  0000 C CNN
+F 2 "" H 5425 4625 50  0001 C CNN
+F 3 "" H 5425 4625 50  0001 C CNN
+	1    5425 4625
+	1    0    0    -1  
+$EndComp
+Connection ~ 3825 4525
+Wire Wire Line
+	3825 4525 3825 4625
+$Comp
+L SDRReciever-rescue:PWR_FLAG-power #FLG02
+U 1 1 5F489CC6
+P 4025 4525
+F 0 "#FLG02" H 4025 4600 50  0001 C CNN
+F 1 "PWR_FLAG" H 4075 4725 50  0000 C CNN
+F 2 "" H 4025 4525 50  0001 C CNN
+F 3 "~" H 4025 4525 50  0001 C CNN
+	1    4025 4525
+	1    0    0    -1  
+$EndComp
+Connection ~ 4025 4525
+Wire Wire Line
+	4025 4525 3825 4525
+Wire Wire Line
+	2325 4125 2575 4125
+Wire Wire Line
+	2325 5325 3025 5325
+Connection ~ 3025 5325
+Wire Wire Line
+	3525 4875 3525 4125
+Wire Wire Line
+	3025 4875 3525 4875
+Text Notes 1425 4300 0    50   ~ 0
+Voltage Smoother \nFor PC 5V power to \neliminate supply noise
+$Comp
+L SDRReciever-rescue:C-Device C15
+U 1 1 5F5B0BCC
+P 15425 2350
+F 0 "C15" V 15675 2350 50  0000 C CNN
+F 1 "10uF" V 15575 2350 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 15463 2200 50  0001 C CNN
+F 3 "~" H 15425 2350 50  0001 C CNN
+	1    15425 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SDRReciever-rescue:C-Device C16
+U 1 1 5F5B1908
+P 15425 2700
+F 0 "C16" V 15275 2700 50  0000 C CNN
+F 1 "10uF" V 15200 2700 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 15463 2550 50  0001 C CNN
+F 3 "~" H 15425 2700 50  0001 C CNN
+	1    15425 2700
+	0    -1   -1   0   
+$EndComp
+Text Notes 3300 1675 0    50   ~ 0
+T50-6 Toroid: \n12 turns
+Text Notes 4300 2500 0    50   ~ 0
+T37-6 Toroid:\n17 turns
+$Comp
+L SDRReciever-rescue:Conn_01x02_Female-Connector J18
+U 1 1 5EA705F4
+P 11025 1950
+F 0 "J18" H 10825 1550 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 10775 1650 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 11025 1950 50  0001 C CNN
+F 3 "~" H 11025 1950 50  0001 C CNN
+	1    11025 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11225 1850 11225 1750
+Wire Wire Line
+	11225 1750 11325 1750
+Connection ~ 11325 1750
+Wire Wire Line
+	11225 1950 11225 2050
+Wire Wire Line
+	11225 2050 11325 2050
+Connection ~ 11325 2050
+$Comp
+L SDRReciever-rescue:Conn_01x02_Female-Connector J19
+U 1 1 5EA8AC8B
+P 11025 3250
+F 0 "J19" H 10825 2850 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 10775 2950 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 11025 3250 50  0001 C CNN
+F 3 "~" H 11025 3250 50  0001 C CNN
+	1    11025 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11325 3050 11225 3050
+Wire Wire Line
+	11225 3050 11225 3150
+Connection ~ 11325 3050
+Wire Wire Line
+	11225 3250 11225 3350
+Wire Wire Line
+	11225 3350 11325 3350
+Connection ~ 11325 3350
+Wire Wire Line
+	10575 3400 10625 3400
+Wire Wire Line
+	10825 3000 10975 3000
+Wire Wire Line
+	10575 3000 10825 3000
+Wire Wire Line
+	10825 3400 11625 3400
+Wire Wire Line
+	10975 3550 10975 3000
+Connection ~ 10975 3000
+Wire Wire Line
+	10975 3000 11625 3000
+Wire Wire Line
+	10625 3550 10625 3400
+Connection ~ 10625 3400
+Wire Wire Line
+	10625 3400 10825 3400
+$Comp
+L SDRReciever-rescue:LM741-Amplifier_Operational U7
+U 1 1 5EDAB873
+P 4725 4625
+F 0 "U7" H 5069 4671 50  0000 L CNN
+F 1 "LM741" H 5069 4580 50  0000 L CNN
+F 2 "" H 4775 4675 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 4875 4775 50  0001 C CNN
+	1    4725 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:+5V-power #PWR042
+U 1 1 5EDC9E45
+P 4625 4325
+F 0 "#PWR042" H 4625 4175 50  0001 C CNN
+F 1 "+5V" H 4775 4375 50  0000 C CNN
+F 2 "" H 4625 4325 50  0001 C CNN
+F 3 "" H 4625 4325 50  0001 C CNN
+	1    4625 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 4725 4325 4725
+Wire Wire Line
+	4325 4725 4325 5175
+Wire Wire Line
+	4325 5175 5025 5175
+Wire Wire Line
+	5025 5175 5025 4625
+$Comp
+L SDRReciever-rescue:GND-power #PWR026
+U 1 1 5EDF4DF4
+P 3825 5100
+F 0 "#PWR026" H 3825 4850 50  0001 C CNN
+F 1 "GND" H 3975 5050 50  0000 C CNN
+F 2 "" H 3825 5100 50  0001 C CNN
+F 3 "" H 3825 5100 50  0001 C CNN
+	1    3825 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4025 4525 4025 4625
+Wire Wire Line
+	3825 5050 4025 5050
+Connection ~ 3825 5050
+Wire Wire Line
+	3825 5050 3825 5100
+Wire Wire Line
+	3825 4925 3825 5050
+Wire Wire Line
+	4025 4925 4025 5050
+Wire Wire Line
+	4025 4525 4425 4525
+Wire Wire Line
+	5025 4625 5425 4625
+Connection ~ 5025 4625
+Text Notes 4125 4150 0    50   ~ 0
+The INA821ID Amps require the REF\ninput to have a voltage source with a\nlow output impedence. The LM741\nvoltage buffer handles this
+$Comp
+L SDRReciever-rescue:R_POT-Device RV1
+U 1 1 5EE830FE
+P 5700 1650
+F 0 "RV1" V 5493 1650 50  0000 C CNN
+F 1 "100k" V 5584 1650 50  0000 C CNN
+F 2 "" H 5700 1650 50  0001 C CNN
+F 3 "~" H 5700 1650 50  0001 C CNN
+	1    5700 1650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5850 1650 5975 1650
+Wire Wire Line
+	5550 1300 5450 1300
+Wire Wire Line
+	5450 1300 5450 1650
+Connection ~ 5450 1650
+Wire Wire Line
+	5450 1650 5550 1650
+Wire Wire Line
+	5850 1300 5975 1300
+Wire Wire Line
+	5975 1300 5975 1650
+Connection ~ 5975 1650
+Wire Wire Line
+	5975 1650 6075 1650
+Wire Wire Line
+	5300 1650 5450 1650
+Wire Wire Line
+	8250 6700 8375 6700
+Wire Wire Line
+	8250 6800 8625 6800
+$Comp
+L SDRReciever-rescue:R-Device R7
+U 1 1 5EF8A4E5
+P 8375 6500
+F 0 "R7" H 8445 6546 50  0000 L CNN
+F 1 "1k" H 8445 6455 50  0000 L CNN
+F 2 "" V 8305 6500 50  0001 C CNN
+F 3 "~" H 8375 6500 50  0001 C CNN
+	1    8375 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R8
+U 1 1 5EF8B556
+P 8625 6500
+F 0 "R8" H 8695 6546 50  0000 L CNN
+F 1 "1k" H 8695 6455 50  0000 L CNN
+F 2 "" V 8555 6500 50  0001 C CNN
+F 3 "~" H 8625 6500 50  0001 C CNN
+	1    8625 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8375 6700 8375 6650
+Wire Wire Line
+	8625 6800 8625 6650
+$Comp
+L SDRReciever-rescue:+3.3V-power #PWR025
+U 1 1 5EFAA0AC
+P 7800 6300
+F 0 "#PWR025" H 7800 6150 50  0001 C CNN
+F 1 "+3.3V" H 7800 6450 50  0000 C CNN
+F 2 "" H 7800 6300 50  0001 C CNN
+F 3 "" H 7800 6300 50  0001 C CNN
+	1    7800 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 6575 8900 6800
+Wire Wire Line
+	8800 6700 8800 6475
+Wire Wire Line
+	8800 6475 8900 6475
+Connection ~ 8375 6700
+Connection ~ 8625 6800
+Wire Wire Line
+	8625 6800 8900 6800
+Wire Wire Line
+	8375 6700 8800 6700
+Wire Wire Line
+	8650 5925 8900 5925
+Wire Wire Line
+	8650 6225 8900 6225
+NoConn ~ 4725 4925
+NoConn ~ 4825 4925
+Wire Notes Line
+	3625 1850 3625 1675
+Wire Notes Line
+	4850 1600 5000 1600
+Wire Notes Line
+	5000 1600 5000 1650
+Text Notes 7650 7025 0    50   ~ 0
+Pull-Up Resistors for I2C lines see the \nSi5351 datasheet for details
+Wire Wire Line
+	8625 6300 8625 6350
+Wire Wire Line
+	8375 6300 8375 6350
+Connection ~ 8375 6300
+Wire Wire Line
+	8375 6300 8625 6300
+Connection ~ 3525 4125
+Text Notes 17025 4975 0    50   ~ 0
+SDA and SCL are I2C Control Signals \nfor the Si5351 Clock Generator
+Text Notes 18100 5675 0    50   ~ 0
+Jumper for\npreventing \nground loops
+Text Notes 8050 5950 0    50   ~ 0
+The ATS250 is \na low-cost 25 \nMHz crystal
+Wire Wire Line
+	7800 6300 8375 6300
+Text Notes 10900 5000 0    50   ~ 0
+Johnson Counter CLK/4 Circuit\nusing 74AC74 dual flip flops
+Text Notes 12550 1875 0    50   ~ 0
+I Signal
+Text Notes 12500 3300 0    50   ~ 0
+Q Signal
+Text Notes 15800 2500 0    50   ~ 0
+I Signal
+Text Notes 15775 2625 0    50   ~ 0
+Q Signal
+Text Notes 15200 1675 0    50   ~ 0
+The dual op amp symbol was made\nby Kondrad McClure. It is not implying that the V+ of one\nis connected to the V- of the other, but that they\nshare the same power and ground pins
+Wire Wire Line
+	9450 1700 10275 1700
+Wire Wire Line
+	9750 2100 10275 2100
+Wire Wire Line
+	9550 3000 10275 3000
+Wire Wire Line
+	9650 3400 10275 3400
+Text Notes 9875 1675 0    50   ~ 0
+00 = 0°
+Text Notes 9875 2075 0    50   ~ 0
+10 = 180°
+Text Notes 9875 2975 0    50   ~ 0
+01 = 90°
+Text Notes 9875 3375 0    50   ~ 0
+11 = 270°
+Text Notes 1400 2375 0    50   ~ 0
+Jumper for\npreventing \nground loops
+Text Notes 2250 1325 0    50   ~ 0
+Bandpass Filter 5-18MHz (3rd Order, Series-First Bessel)\nBy doing Series-First, DC signals cannot pass through the capacitor (C2), \nallowing better control over the DC offset going into the op-amps
+Text Notes 2275 2675 0    50   ~ 0
+Voltage Protection Diodes:\nThese will prevent too large of signals \nfrom coming through
+Text Notes 8875 2100 0    50   ~ 0
+00 = 0°
+Text Notes 8875 2600 0    50   ~ 0
+00 = 0°
+Text Notes 8875 2200 0    50   ~ 0
+10 = 180°
+Text Notes 8875 2700 0    50   ~ 0
+10 = 180°
+Text Notes 8875 2300 0    50   ~ 0
+01 = 90°
+Text Notes 8875 2800 0    50   ~ 0
+01 = 90°
+Text Notes 8875 2900 0    50   ~ 0
+11 = 270°
+Text Notes 8875 2400 0    50   ~ 0
+11 = 270°
+Text Notes 4450 1625 0    50   ~ 0
+T50-6 Toroid: \n30 turns
+Wire Notes Line
+	4400 2300 4400 2150
+Text Notes 675  975  0    50   ~ 0
+Toroid Info:\nT37-6: 3nH per turns^2\nT50-6: 4nH per turns^2\nSee datasheet for more info
+Wire Notes Line
+	650  650  650  1000
+Wire Notes Line
+	650  1000 1800 1000
+Wire Notes Line
+	1800 1000 1800 650 
+Wire Notes Line
+	1800 650  650  650 
+$Comp
+L SDRReciever-rescue:INA821ID-INA821ID U5
+U 1 1 5EA101A3
+P 12025 3200
+F 0 "U5" H 11875 3250 50  0000 L CNN
+F 1 "INA821ID" H 11775 3150 50  0000 L CNN
+F 2 "import_footprint:SOIC127P600X175-8N" H 12025 3200 50  0001 L BNN
+F 3 "B" H 12025 3200 50  0001 L BNN
+F 4 "1.75mm" H 12025 3200 50  0001 L BNN "Field4"
+F 5 "Texas Instruments" H 12025 3200 50  0001 L BNN "Field5"
+F 6 "IPC-7351B" H 12025 3200 50  0001 L BNN "Field6"
+	1    12025 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 2400
+Wire Wire Line
+	4050 2400 4250 2400
+Connection ~ 2750 1900
+Wire Wire Line
+	2750 1900 3150 1900
+Connection ~ 2750 2400
+Wire Wire Line
+	2750 2400 4050 2400
+Wire Wire Line
+	2350 2400 2750 2400
+Wire Wire Line
+	2350 1900 2750 1900
+$EndSCHEMATC

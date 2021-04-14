@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name LT1167CN8PBF)(type Legacy)(uri ${KIPRJMOD}/LT1167CN8PBF.lib)(options "")(descr ""))
+  (lib (name FST3253)(type Legacy)(uri ${KIPRJMOD}/FST3253.lib)(options "")(descr ""))
+  (lib (name INA821ID)(type Legacy)(uri "C:/Program Files/KiCad/import_symbol/INA821ID.lib")(options "")(descr ""))
+  (lib (name OPA213FPZ)(type Legacy)(uri ${KIPRJMOD}/Imported_Symbols/OPA213FPZ.lib)(options "")(descr ""))
+  (lib (name 4V3Power)(type Legacy)(uri ${KIPRJMOD}/Imported_Symbols/4V3Power.lib)(options "")(descr ""))
+  (lib (name SDRReciever_BeforeInOpAmp-rescue)(type Legacy)(uri ${KIPRJMOD}/SDRReciever_BeforeInOpAmp-rescue.lib)(options "")(descr ""))
+  (lib (name SDRReciever-rescue)(type Legacy)(uri ${KIPRJMOD}/SDRReciever-rescue.lib)(options "")(descr ""))
+)
