@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:SDRReciever-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
@@ -125,9 +124,9 @@ F 3 "" H 15400 5275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 14250 4725 1    50   ~ 0
-SDA
+SDA_5V
 Text Label 14350 4725 1    50   ~ 0
-SCL
+SCL_5V
 $Comp
 L SDRReciever-rescue:+3.3V-power #PWR02
 U 1 1 5EA05EBD
@@ -217,9 +216,9 @@ F 3 "" H 8625 5825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7475 5850 2    50   ~ 0
-SDA
+SDA_3V
 Text Label 7475 5750 2    50   ~ 0
-SCL
+SCL_3V
 $Comp
 L SDRReciever-rescue:Jumper_NC_Small-Device JP2
 U 1 1 5EB6D8A5
@@ -897,28 +896,6 @@ F 1 "CLK_0" H 9900 4925 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9600 4975 50  0001 C CNN
 F 3 "~" H 9600 4975 50  0001 C CNN
 	1    9600 4975
-	1    0    0    -1  
-$EndComp
-$Comp
-L SDRReciever-rescue:Conn_01x01-Connector_Generic J8
-U 1 1 5EAFA8DE
-P 9350 5125
-F 0 "J8" H 9450 5175 50  0000 L CNN
-F 1 "I_LO" H 9450 5100 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9350 5125 50  0001 C CNN
-F 3 "~" H 9350 5125 50  0001 C CNN
-	1    9350 5125
-	1    0    0    -1  
-$EndComp
-$Comp
-L SDRReciever-rescue:Conn_01x01-Connector_Generic J9
-U 1 1 5EB14DFD
-P 9350 5325
-F 0 "J9" H 9450 5375 50  0000 L CNN
-F 1 "Q_LO" H 9450 5300 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9350 5325 50  0001 C CNN
-F 3 "~" H 9350 5325 50  0001 C CNN
-	1    9350 5325
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1750,17 +1727,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 4875 4775 50  0001 C CNN
 	1    4725 4625
 	1    0    0    -1  
 $EndComp
-$Comp
-L SDRReciever-rescue:+5V-power #PWR042
-U 1 1 5EDC9E45
-P 4625 4325
-F 0 "#PWR042" H 4625 4175 50  0001 C CNN
-F 1 "+5V" H 4775 4375 50  0000 C CNN
-F 2 "" H 4625 4325 50  0001 C CNN
-F 3 "" H 4625 4325 50  0001 C CNN
-	1    4625 4325
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4425 4725 4325 4725
 Wire Wire Line
@@ -1796,7 +1762,7 @@ Wire Wire Line
 Wire Wire Line
 	5025 4625 5425 4625
 Connection ~ 5025 4625
-Text Notes 4125 4150 0    50   ~ 0
+Text Notes 4175 4075 0    50   ~ 0
 The INA821ID Amps require the REF\ninput to have a voltage source with a\nlow output impedence. The LM741\nvoltage buffer handles this
 Wire Wire Line
 	6150 1650 6275 1650
@@ -1877,7 +1843,7 @@ Wire Notes Line
 	4850 1600 5000 1600
 Wire Notes Line
 	5000 1600 5000 1650
-Text Notes 6875 6075 0    50   ~ 0
+Text Notes 6875 6175 0    50   ~ 0
 Pull-Up Resistors for I2C lines see the \nSi5351 datasheet for details
 Wire Wire Line
 	7850 5350 7850 5400
@@ -1992,10 +1958,8 @@ Wire Wire Line
 	9150 4975 9150 5125
 Wire Wire Line
 	9150 5325 9125 5325
-Connection ~ 9150 5325
 Wire Wire Line
 	9150 5125 9125 5125
-Connection ~ 9150 5125
 Wire Wire Line
 	9150 5525 9125 5525
 Text Notes 1375 1650 0    50   ~ 0
@@ -2060,5 +2024,184 @@ Final Output\n(to soundcard)
 Text Notes 10875 700  0    50   ~ 10
 Amplifiers
 Text Notes 6400 2775 0    50   ~ 0
-NOTE:\nDouble check values of C5-C8
+NOTE:\nDouble check values of C5-C8\n100nf?
+Text Notes 4600 5600 0    50   ~ 0
+NOTE: use Lower noise op amp
+Text Notes 13250 3800 0    50   ~ 0
+NOTE: maybe split the gain between these two op amp stages (especially if the later stage is low noise)
+$Comp
+L SDRReciever-rescue:R-Device R20
+U 1 1 607EFC63
+P 2400 7025
+F 0 "R20" H 2470 7071 50  0000 L CNN
+F 1 "10k" H 2470 6980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2330 7025 50  0001 C CNN
+F 3 "~" H 2400 7025 50  0001 C CNN
+	1    2400 7025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6825 4050 6875
+Wire Wire Line
+	4450 6825 4450 6875
+Wire Wire Line
+	2400 6825 2800 6825
+Connection ~ 2400 6825
+Wire Wire Line
+	2400 6825 2400 6875
+Connection ~ 2800 6825
+Wire Wire Line
+	4050 6825 4450 6825
+Connection ~ 4450 6825
+$Comp
+L Device:Q_NMOS_GSD Q3
+U 1 1 608C951F
+P 3750 8025
+F 0 "Q3" V 3999 8025 50  0000 C CNN
+F 1 "BSS138" V 4090 8025 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3950 8125 50  0001 C CNN
+F 3 "~" H 3750 8025 50  0001 C CNN
+	1    3750 8025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 8125 2800 8125
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 608B7971
+P 3200 7325
+F 0 "Q2" V 3449 7325 50  0000 C CNN
+F 1 "BSS138" V 3540 7325 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3400 7425 50  0001 C CNN
+F 3 "~" H 3200 7325 50  0001 C CNN
+	1    3200 7325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 6825 3200 7125
+Wire Wire Line
+	3200 6825 3750 6825
+Wire Wire Line
+	3750 6825 3750 7825
+Connection ~ 3200 6825
+Wire Wire Line
+	4050 7175 4050 7425
+Wire Wire Line
+	4050 7425 3400 7425
+Wire Wire Line
+	4450 8125 3950 8125
+Wire Wire Line
+	4450 7175 4450 7775
+Wire Wire Line
+	2400 7175 2400 7425
+Connection ~ 2400 7425
+Wire Wire Line
+	2800 6825 2800 6875
+Wire Wire Line
+	2800 6825 3200 6825
+Wire Wire Line
+	2800 7175 2800 8125
+Connection ~ 2800 8125
+Wire Wire Line
+	2800 8125 2100 8125
+Wire Wire Line
+	4450 6675 4450 6825
+Wire Wire Line
+	4450 7775 4750 7775
+Connection ~ 4450 7775
+Wire Wire Line
+	4450 7775 4450 8125
+Text Label 4750 7775 0    50   ~ 0
+SCL_5V
+Text Label 4150 7425 0    50   ~ 0
+SDA_5V
+Text Label 2100 7425 2    50   ~ 0
+SDA_3V
+Text Label 2100 8125 2    50   ~ 0
+SCL_3V
+Wire Wire Line
+	2400 7425 2100 7425
+Wire Wire Line
+	2400 7425 3000 7425
+$Comp
+L SDRReciever-rescue:+5V-power #PWR030
+U 1 1 60A07087
+P 4450 6675
+F 0 "#PWR030" H 4450 6525 50  0001 C CNN
+F 1 "+5V" H 4465 6848 50  0000 C CNN
+F 2 "" H 4450 6675 50  0001 C CNN
+F 3 "" H 4450 6675 50  0001 C CNN
+	1    4450 6675
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:+3.3V-power #PWR05
+U 1 1 60A07AAF
+P 2400 6650
+F 0 "#PWR05" H 2400 6500 50  0001 C CNN
+F 1 "+3.3V" H 2415 6823 50  0000 C CNN
+F 2 "" H 2400 6650 50  0001 C CNN
+F 3 "" H 2400 6650 50  0001 C CNN
+	1    2400 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4V3Power:+4.3V #PWR04
+U 1 1 60A1FEE2
+P 4625 4325
+F 0 "#PWR04" H 4625 4175 50  0001 C CNN
+F 1 "+4.3V" H 4640 4498 50  0000 C CNN
+F 2 "" H 4625 4325 50  0001 C CNN
+F 3 "" H 4625 4325 50  0001 C CNN
+	1    4625 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R21
+U 1 1 60A20952
+P 2800 7025
+F 0 "R21" H 2870 7071 50  0000 L CNN
+F 1 "10k" H 2870 6980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2730 7025 50  0001 C CNN
+F 3 "~" H 2800 7025 50  0001 C CNN
+	1    2800 7025
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R22
+U 1 1 60A20C11
+P 4050 7025
+F 0 "R22" H 4120 7071 50  0000 L CNN
+F 1 "10k" H 4120 6980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3980 7025 50  0001 C CNN
+F 3 "~" H 4050 7025 50  0001 C CNN
+	1    4050 7025
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:R-Device R23
+U 1 1 60A20F9E
+P 4450 7025
+F 0 "R23" H 4520 7071 50  0000 L CNN
+F 1 "10k" H 4520 6980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 7025 50  0001 C CNN
+F 3 "~" H 4450 7025 50  0001 C CNN
+	1    4450 7025
+	1    0    0    -1  
+$EndComp
+Text Notes 3700 6050 2    50   ~ 10
+5V to 3.3V Conveter
+Text Notes 3900 6400 2    50   ~ 0
+This is used to convert the\n5V logic of the arduino nano\nto the 3.3V logic of the Si5351a\nboth directions.
+Text Label 9150 5125 0    50   ~ 0
+I_LO
+Text Label 9150 5325 0    50   ~ 0
+Q_LO
+Wire Wire Line
+	2400 6650 2400 6825
+Wire Wire Line
+	4050 7425 4150 7425
+Connection ~ 4050 7425
+Text Notes 10075 7275 0    50   ~ 0
+Note:\nCheck all footprints\nExchange some through hole components for surface mount
 $EndSCHEMATC
