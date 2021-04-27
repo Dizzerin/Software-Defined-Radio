@@ -6,4 +6,5 @@
   (lib (name 4V3Power)(type Legacy)(uri ${KIPRJMOD}/Imported_Symbols/4V3Power.lib)(options "")(descr ""))
   (lib (name SDRReciever_BeforeInOpAmp-rescue)(type Legacy)(uri ${KIPRJMOD}/SDRReciever_BeforeInOpAmp-rescue.lib)(options "")(descr ""))
   (lib (name SDRReciever-rescue)(type Legacy)(uri ${KIPRJMOD}/SDRReciever-rescue.lib)(options "")(descr ""))
+  (lib (name SDRReciever02-rescue)(type Legacy)(uri ${KIPRJMOD}/SDRReciever02-rescue.lib)(options "")(descr ""))
 )
