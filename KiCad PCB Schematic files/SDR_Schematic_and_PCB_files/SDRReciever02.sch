@@ -198,8 +198,6 @@ F 3 "~" H 11975 4975 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2750 2200 2750 2400
-Wire Wire Line
 	4250 2200 4250 2400
 Wire Wire Line
 	4050 2200 4050 2400
@@ -539,17 +537,6 @@ F 3 "~" H 11625 4975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SDRReciever-rescue:1N914-Diode D2
-U 1 1 5EA1DE64
-P 2750 2050
-F 0 "D2" V 2796 1971 50  0000 R CNN
-F 1 "1N914" V 2705 1971 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2750 1875 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 2750 2050 50  0001 C CNN
-	1    2750 2050
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:Crystal_GND24 Y1
 U 1 1 5EA4F383
 P 5275 4325
@@ -685,8 +672,6 @@ Wire Wire Line
 Wire Wire Line
 	8050 2600 7850 2600
 Connection ~ 2000 2400
-Wire Wire Line
-	2000 2400 2350 2400
 $Comp
 L SDRReciever-rescue:Conn_01x01-Connector_Generic J3
 U 1 1 5EA8A5D4
@@ -699,21 +684,8 @@ F 3 "~" H 2350 1700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 2350 1900
-$Comp
-L SDRReciever-rescue:1N914-Diode D1
-U 1 1 5EA1C428
-P 2350 2050
-F 0 "D1" V 2304 2129 50  0000 L CNN
-F 1 "1N914" V 2395 2129 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2350 1875 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 2350 2050 50  0001 C CNN
-	1    2350 2050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2200 1900 2350 1900
-Wire Wire Line
-	2350 2200 2350 2400
 Wire Wire Line
 	2000 2350 2000 2400
 Wire Wire Line
@@ -1063,8 +1035,6 @@ Text Notes 1400 2375 0    50   ~ 0
 Jumper for\npreventing \nground loops
 Text Notes 2250 1325 0    50   ~ 0
 6-16MHz (3rd Order, Series-First Butterworth)\nBy doing Series-First, DC signals cannot pass through the capacitor (C2), \nallowing better control over the DC offset going into the op-amps
-Text Notes 2275 2675 0    50   ~ 0
-Voltage Protection Diodes:\nThese will prevent too large of signals \nfrom coming through
 Text Notes 8875 2100 0    50   ~ 0
 00 = 0°
 Text Notes 8875 2600 0    50   ~ 0
@@ -1095,17 +1065,8 @@ Wire Notes Line
 	1800 1000 1800 650 
 Wire Notes Line
 	1800 650  650  650 
-Connection ~ 2350 2400
 Wire Wire Line
 	4050 2400 4250 2400
-Wire Wire Line
-	2750 1900 3150 1900
-Wire Wire Line
-	2750 2400 4050 2400
-Wire Wire Line
-	2350 2400 2750 2400
-Wire Wire Line
-	2350 1900 2750 1900
 Wire Wire Line
 	7250 4425 6775 4425
 Wire Wire Line
@@ -1122,8 +1083,6 @@ Wire Wire Line
 	6775 4725 6750 4725
 Text Notes 1375 1650 0    50   ~ 0
 Antenna Connector
-Connection ~ 2750 2400
-Connection ~ 2750 1900
 Connection ~ 4050 2400
 Text Notes 2325 1600 0    50   ~ 0
 Test point pad
@@ -1186,8 +1145,6 @@ Wire Wire Line
 	4050 6825 4050 6875
 Wire Wire Line
 	4450 6825 4450 6875
-Wire Wire Line
-	2400 6825 2800 6825
 Connection ~ 2400 6825
 Wire Wire Line
 	2400 6825 2400 6875
@@ -1195,19 +1152,6 @@ Connection ~ 2800 6825
 Wire Wire Line
 	4050 6825 4450 6825
 Connection ~ 4450 6825
-$Comp
-L Device:Q_NMOS_GSD Q3
-U 1 1 608C951F
-P 3750 8025
-F 0 "Q3" V 3999 8025 50  0000 C CNN
-F 1 "BSS138" V 4090 8025 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3950 8125 50  0001 C CNN
-F 3 "~" H 3750 8025 50  0001 C CNN
-	1    3750 8025
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3550 8125 2800 8125
 $Comp
 L Device:Q_NMOS_GSD Q2
 U 1 1 608B7971
@@ -1223,15 +1167,11 @@ Wire Wire Line
 	3200 6825 3200 7125
 Wire Wire Line
 	3200 6825 3750 6825
-Wire Wire Line
-	3750 6825 3750 7825
 Connection ~ 3200 6825
 Wire Wire Line
 	4050 7175 4050 7425
 Wire Wire Line
 	4050 7425 3400 7425
-Wire Wire Line
-	4450 8125 3950 8125
 Wire Wire Line
 	4450 7175 4450 7775
 Wire Wire Line
@@ -1242,25 +1182,15 @@ Wire Wire Line
 Wire Wire Line
 	2800 6825 3200 6825
 Wire Wire Line
-	2800 7175 2800 8125
-Connection ~ 2800 8125
-Wire Wire Line
-	2800 8125 2100 8125
-Wire Wire Line
 	4450 6675 4450 6825
 Wire Wire Line
 	4450 7775 4750 7775
-Connection ~ 4450 7775
-Wire Wire Line
-	4450 7775 4450 8125
 Text Label 4750 7775 0    50   ~ 0
 SCL_5V
 Text Label 4150 7425 0    50   ~ 0
 SDA_5V
 Text Label 2100 7425 2    50   ~ 0
 SDA_3V
-Text Label 2100 8125 2    50   ~ 0
-SCL_3V
 Wire Wire Line
 	2400 7425 2100 7425
 Wire Wire Line
@@ -1329,12 +1259,8 @@ I_LO
 Text Label 6775 4525 0    50   ~ 0
 Q_LO
 Wire Wire Line
-	2400 6650 2400 6825
-Wire Wire Line
 	4050 7425 4150 7425
 Connection ~ 4050 7425
-Text Notes 6550 6825 0    50   ~ 0
-Note:\nCheck all footprints\nExchange some through hole components for surface mount
 $Comp
 L Amplifier_Operational:LM4562 U2
 U 1 1 6096AA6E
@@ -1668,4 +1594,46 @@ Wire Wire Line
 	5625 4225 5625 4250
 Text Notes 1700 4900 0    50   ~ 0
 Optional\nbypass jumper
+Wire Wire Line
+	2350 1900 3150 1900
+Wire Wire Line
+	2000 2400 4050 2400
+$Comp
+L SDRReciever-rescue:Conn_01x01-Connector_Generic J8
+U 1 1 60888163
+P 2200 6700
+F 0 "J8" H 2325 6750 50  0000 L CNN
+F 1 "3.3V" H 2300 6675 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2200 6700 50  0001 C CNN
+F 3 "~" H 2200 6700 50  0001 C CNN
+	1    2200 6700
+	-1   0    0    1   
+$EndComp
+Connection ~ 4450 7775
+Wire Wire Line
+	2400 6825 2800 6825
+Text Label 2100 7775 2    50   ~ 0
+SCL_3V
+Wire Wire Line
+	4450 7775 3950 7775
+$Comp
+L Device:Q_NMOS_GSD Q3
+U 1 1 608C951F
+P 3750 7675
+F 0 "Q3" V 3999 7675 50  0000 C CNN
+F 1 "BSS138" V 4090 7675 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3950 7775 50  0001 C CNN
+F 3 "~" H 3750 7675 50  0001 C CNN
+	1    3750 7675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 7775 3550 7775
+Wire Wire Line
+	3750 6825 3750 7475
+Wire Wire Line
+	2400 6650 2400 6700
+Connection ~ 2400 6700
+Wire Wire Line
+	2400 6700 2400 6825
 $EndSCHEMATC
