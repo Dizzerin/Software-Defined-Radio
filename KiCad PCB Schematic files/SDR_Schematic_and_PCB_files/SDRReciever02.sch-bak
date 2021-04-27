@@ -5,11 +5,11 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "SDR Reciever"
-Date "2021-04-13"
-Rev "0.1"
+Date "2021-04-26"
+Rev "0.2"
 Comp "Walla Walla University"
-Comment1 "Author: Darius Felder"
-Comment2 "Author: Caleb Nelson"
+Comment1 "Author: Caleb Nelson"
+Comment2 ""
 Comment3 "ENGR 357"
 Comment4 ""
 $EndDescr
@@ -19,7 +19,7 @@ U 1 1 5E938A64
 P 4250 2050
 F 0 "L1" H 4303 2096 50  0000 L CNN
 F 1 "430nH" H 4303 2005 50  0000 L CNN
-F 2 "Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm" H 4250 2050 50  0001 C CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L10.0mm_W5.0mm_P5.08mm" H 4250 2050 50  0001 C CNN
 F 3 "http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf" H 4250 2050 50  0001 C CNN
 	1    4250 2050
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5E93C289
 P 4050 2050
 F 0 "C1" H 4350 2050 50  0000 R CNN
 F 1 "620pF" H 4400 2150 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4088 1900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 1900 50  0001 C CNN
 F 3 "~" H 4050 2050 50  0001 C CNN
 	1    4050 2050
 	-1   0    0    1   
@@ -123,7 +123,7 @@ U 1 1 5EA0EEB1
 P 6650 3875
 F 0 "C4" V 6398 3875 50  0000 C CNN
 F 1 "0.1u" V 6489 3875 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 6688 3725 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6688 3725 50  0001 C CNN
 F 3 "~" H 6650 3875 50  0001 C CNN
 	1    6650 3875
 	0    1    1    0   
@@ -209,7 +209,7 @@ U 1 1 5EBA63BC
 P 3300 1900
 F 0 "C2" V 3150 1900 50  0000 R CNN
 F 1 "330pF" V 3050 1950 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 3338 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3338 1750 50  0001 C CNN
 F 3 "~" H 3300 1900 50  0001 C CNN
 	1    3300 1900
 	0    -1   -1   0   
@@ -220,7 +220,7 @@ U 1 1 5EBA7E50
 P 3700 1900
 F 0 "L2" V 3900 1875 50  0000 C CNN
 F 1 "820nH" V 3800 1800 50  0000 C CNN
-F 2 "Inductor_THT:L_Toroid_Vertical_L10.0mm_W5.0mm_P5.08mm" H 3700 1900 50  0001 C CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm" H 3700 1900 50  0001 C CNN
 F 3 "http://www.lodestonepacific.com/distrib/pdfs/Micrometals/RFA_Cat.pdf" H 3700 1900 50  0001 C CNN
 	1    3700 1900
 	0    -1   -1   0   
@@ -252,7 +252,7 @@ U 1 1 5EBAF176
 P 4600 1900
 F 0 "C3" V 4450 1900 50  0000 R CNN
 F 1 "330pF" V 4350 1950 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4638 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4638 1750 50  0001 C CNN
 F 3 "~" H 4600 1900 50  0001 C CNN
 	1    4600 1900
 	0    -1   -1   0   
@@ -269,7 +269,7 @@ U 1 1 5EC286E8
 P 5875 1300
 F 0 "C11" V 6125 1225 50  0000 L CNN
 F 1 "0.1u" V 6050 1225 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 5913 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5913 1150 50  0001 C CNN
 F 3 "~" H 5875 1300 50  0001 C CNN
 	1    5875 1300
 	0    -1   -1   0   
@@ -337,7 +337,7 @@ U 1 1 5ECE7838
 P 9275 5325
 F 0 "C13" H 9390 5371 50  0000 L CNN
 F 1 "0.1u" H 9390 5280 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 9313 5175 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9313 5175 50  0001 C CNN
 F 3 "~" H 9275 5325 50  0001 C CNN
 	1    9275 5325
 	1    0    0    -1  
@@ -348,7 +348,7 @@ U 1 1 5ECE83AE
 P 8975 5325
 F 0 "C12" H 8675 5375 50  0000 L CNN
 F 1 "0.1u" H 8675 5275 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 9013 5175 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9013 5175 50  0001 C CNN
 F 3 "~" H 8975 5325 50  0001 C CNN
 	1    8975 5325
 	1    0    0    -1  
@@ -385,7 +385,7 @@ U 1 1 5E9860CA
 P 8200 1600
 F 0 "C10" V 7950 1550 50  0000 L CNN
 F 1 "0.1u" V 8050 1500 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 8238 1450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8238 1450 50  0001 C CNN
 F 3 "~" H 8200 1600 50  0001 C CNN
 	1    8200 1600
 	0    1    1    0   
@@ -407,7 +407,7 @@ Wire Wire Line
 	8350 1600 8450 1600
 Connection ~ 8450 1600
 Text Notes 14825 2300 0    50   ~ 0
-Full Scale Input \nSignal Level Typ: 1.0 Vrms\nInput R = 55kΩ.
+Full Scale Input \nSignal Level Typ: 1.0 Vrms\nInput R = 55kΩ?????
 $Comp
 L SDRReciever-rescue:+5V-power #PWR019
 U 1 1 5E9B0D3C
@@ -425,7 +425,7 @@ U 1 1 5E9B0D42
 P 2575 4325
 F 0 "R1" H 2645 4371 50  0000 L CNN
 F 1 "1k" H 2645 4280 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2505 4325 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2505 4325 50  0001 C CNN
 F 3 "~" H 2575 4325 50  0001 C CNN
 	1    2575 4325
 	1    0    0    -1  
@@ -456,7 +456,7 @@ U 1 1 5E9C5A51
 P 2575 4825
 F 0 "C9" V 2323 4825 50  0000 C CNN
 F 1 "10uF" V 2414 4825 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2613 4675 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2613 4675 50  0001 C CNN
 F 3 "~" H 2575 4825 50  0001 C CNN
 	1    2575 4825
 	-1   0    0    1   
@@ -469,7 +469,7 @@ U 1 1 5EA72DEC
 P 10425 1700
 F 0 "R5" V 10218 1700 50  0000 C CNN
 F 1 "50" V 10309 1700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10355 1700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10355 1700 50  0001 C CNN
 F 3 "~" H 10425 1700 50  0001 C CNN
 	1    10425 1700
 	0    1    1    0   
@@ -480,7 +480,7 @@ U 1 1 5EAB1A22
 P 10425 2150
 F 0 "R10" V 10218 2150 50  0000 C CNN
 F 1 "50" V 10309 2150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10355 2150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10355 2150 50  0001 C CNN
 F 3 "~" H 10425 2150 50  0001 C CNN
 	1    10425 2150
 	0    1    1    0   
@@ -491,7 +491,7 @@ U 1 1 5EACF577
 P 10425 3000
 F 0 "R11" V 10218 3000 50  0000 C CNN
 F 1 "50" V 10309 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10355 3000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10355 3000 50  0001 C CNN
 F 3 "~" H 10425 3000 50  0001 C CNN
 	1    10425 3000
 	0    1    1    0   
@@ -502,7 +502,7 @@ U 1 1 5EACFAEA
 P 10425 3450
 F 0 "R12" V 10218 3450 50  0000 C CNN
 F 1 "50" V 10309 3450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10355 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10355 3450 50  0001 C CNN
 F 3 "~" H 10425 3450 50  0001 C CNN
 	1    10425 3450
 	0    1    1    0   
@@ -550,22 +550,23 @@ F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 2750 2050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SDRReciever-rescue:Crystal-Device Y1
+L Device:Crystal_GND24 Y1
 U 1 1 5EA4F383
-P 5500 4325
-F 0 "Y1" V 5450 4025 50  0000 L CNN
-F 1 "ATS250" V 5550 3925 50  0000 L CNN
-F 2 "Crystal:Crystal_HC49-U_Vertical" H 5500 4325 50  0001 C CNN
-F 3 "https://www.ctscorp.com/wp-content/uploads/ATS-ATSSM.pdf" H 5500 4325 50  0001 C CNN
-	1    5500 4325
+P 5275 4325
+F 0 "Y1" V 4950 4275 50  0000 L CNN
+F 1 "CX3225SB" V 5050 4175 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm" H 5275 4325 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Optrex%20PDFs/CX3225SByyy00D0FFFCC_Spec.pdf" H 5275 4325 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/kyocera-international-inc-electronic-components/CX3225SB25000D0FFFCC/4896407?s=N4IgjCBcoLQBxVAYygMwIYBsDOBTANCAPZQDa4ATAKwDMIAugL6OEVkgDCAGjRdQMoAhagAYxAEREAxGRw4NGQA" V 5275 4325 50  0001 C CNN "DigiKey"
+	1    5275 4325
 	0    1    1    0   
 $EndComp
 $Comp
 L SDRReciever-rescue:Conn_01x01-Connector_Generic J4
 U 1 1 5EA8B6E9
 P 5300 2100
-F 0 "J4" V 5225 1900 50  0000 L CNN
-F 1 "FIL_O" V 5300 1825 50  0000 L CNN
+F 0 "J4" V 5300 1925 50  0000 L CNN
+F 1 "FIL_OUT" V 5425 1950 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5300 2100 50  0001 C CNN
 F 3 "~" H 5300 2100 50  0001 C CNN
 	1    5300 2100
@@ -691,7 +692,7 @@ L SDRReciever-rescue:Conn_01x01-Connector_Generic J3
 U 1 1 5EA8A5D4
 P 2350 1700
 F 0 "J3" V 2314 1612 50  0000 R CNN
-F 1 "FIL_I" V 2223 1612 50  0000 R CNN
+F 1 "FIL_IN" V 2223 1612 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2350 1700 50  0001 C CNN
 F 3 "~" H 2350 1700 50  0001 C CNN
 	1    2350 1700
@@ -944,9 +945,9 @@ Wire Wire Line
 Text Notes 1425 4300 0    50   ~ 0
 Voltage Smoother \nFor PC 5V power to \neliminate supply noise
 Text Notes 3300 1675 0    50   ~ 0
-T50-6 Toroid: \n-- turns
+T50-6 Toroid: \n14.3 turns
 Text Notes 4300 2500 0    50   ~ 0
-T37-6 Toroid:\n-- turns
+T37-6 Toroid:\n11.9 turns
 Wire Wire Line
 	6150 1650 6275 1650
 Wire Wire Line
@@ -971,7 +972,7 @@ U 1 1 5EF8A4E5
 P 5225 4750
 F 0 "R7" H 5295 4796 50  0000 L CNN
 F 1 "1k" H 5295 4705 50  0000 L CNN
-F 2 "" V 5155 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5155 4750 50  0001 C CNN
 F 3 "~" H 5225 4750 50  0001 C CNN
 	1    5225 4750
 	1    0    0    -1  
@@ -982,7 +983,7 @@ U 1 1 5EF8B556
 P 5475 4750
 F 0 "R8" H 5545 4796 50  0000 L CNN
 F 1 "1k" H 5545 4705 50  0000 L CNN
-F 2 "" V 5405 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5405 4750 50  0001 C CNN
 F 3 "~" H 5475 4750 50  0001 C CNN
 	1    5475 4750
 	1    0    0    -1  
@@ -1015,9 +1016,9 @@ Wire Wire Line
 Wire Wire Line
 	5225 4950 5650 4950
 Wire Wire Line
-	5500 4175 5750 4175
+	5275 4175 5750 4175
 Wire Wire Line
-	5500 4475 5750 4475
+	5275 4475 5750 4475
 Wire Notes Line
 	3625 1850 3625 1675
 Wire Notes Line
@@ -1038,8 +1039,8 @@ Text Notes 11100 4500 0    50   ~ 0
 SDA and SCL are I2C Control Signals \nfor the Si5351 Clock Generator
 Text Notes 12175 5200 0    50   ~ 0
 Jumper for\npreventing \nground loops
-Text Notes 4900 4200 0    50   ~ 0
-The ATS250 is \na low-cost 25 \nMHz crystal\n\nCX3225\n25 MHz crystal
+Text Notes 4925 3950 0    50   ~ 0
+CX3225SB\n25 MHz crystal
 Wire Wire Line
 	4650 4550 5225 4550
 Wire Wire Line
@@ -1081,7 +1082,7 @@ Text Notes 8875 2900 0    50   ~ 0
 Text Notes 8875 2400 0    50   ~ 0
 11 = 180°
 Text Notes 4450 1625 0    50   ~ 0
-T50-6 Toroid: \n-- turns
+T50-6 Toroid: \n14.3 turns
 Wire Notes Line
 	4400 2300 4400 2150
 Text Notes 675  975  0    50   ~ 0
@@ -1132,7 +1133,7 @@ U 1 1 607E5D8B
 P 5700 1650
 F 0 "R18" V 5493 1650 50  0000 C CNN
 F 1 "10k" V 5584 1650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5630 1650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5630 1650 50  0001 C CNN
 F 3 "~" H 5700 1650 50  0001 C CNN
 	1    5700 1650
 	0    1    1    0   
@@ -1143,7 +1144,7 @@ U 1 1 6080313C
 P 6000 1650
 F 0 "R19" V 5793 1650 50  0000 C CNN
 F 1 "10k" V 5884 1650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5930 1650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5930 1650 50  0001 C CNN
 F 3 "~" H 6000 1650 50  0001 C CNN
 	1    6000 1650
 	0    1    1    0   
@@ -1162,10 +1163,6 @@ Wire Wire Line
 	5300 1900 5850 1900
 Text Notes 3275 875  0    50   ~ 10
 Bandpass Filter
-Text Notes 2750 3400 0    50   ~ 10
-Voltage Smoother
-Text Notes 2550 3600 0    50   ~ 0
-To smooth 5V power supply from\nUSB which may contain noise
 Text Notes 5750 3425 0    50   ~ 10
 Local Oscillator (Si5351a)
 Text Notes 10275 4225 0    50   ~ 10
@@ -1174,8 +1171,6 @@ Text Notes 8200 1025 0    50   ~ 10
 Tayloe Mixer
 Text Notes 14800 1950 0    50   ~ 10
 Final Output\n(to soundcard)
-Text Notes 6400 2775 0    50   ~ 0
-NOTE:\nDouble check values of C5-C8\n100nf?
 $Comp
 L SDRReciever-rescue:R-Device R20
 U 1 1 607EFC63
@@ -1338,7 +1333,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 7425 4150 7425
 Connection ~ 4050 7425
-Text Notes 10075 7275 0    50   ~ 0
+Text Notes 6550 6825 0    50   ~ 0
 Note:\nCheck all footprints\nExchange some through hole components for surface mount
 $Comp
 L Amplifier_Operational:LM4562 U2
@@ -1379,7 +1374,7 @@ U 1 1 6097AC33
 P 11800 1200
 F 0 "R4" V 11593 1200 50  0000 C CNN
 F 1 "50k" V 11684 1200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 11730 1200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11730 1200 50  0001 C CNN
 F 3 "~" H 11800 1200 50  0001 C CNN
 	1    11800 1200
 	0    1    1    0   
@@ -1390,7 +1385,7 @@ U 1 1 6097AF04
 P 12100 1350
 F 0 "C15" H 11850 1400 50  0000 L CNN
 F 1 "15p" H 11800 1300 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 12138 1200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12138 1200 50  0001 C CNN
 F 3 "~" H 12100 1350 50  0001 C CNN
 	1    12100 1350
 	1    0    0    -1  
@@ -1401,7 +1396,7 @@ U 1 1 6097B3C7
 P 11500 1850
 F 0 "C14" H 11250 1900 50  0000 L CNN
 F 1 "22n" H 11200 1800 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 11538 1700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 11538 1700 50  0001 C CNN
 F 3 "~" H 11500 1850 50  0001 C CNN
 	1    11500 1850
 	1    0    0    -1  
@@ -1412,7 +1407,7 @@ U 1 1 609AE537
 P 12100 2300
 F 0 "C16" H 11850 2350 50  0000 L CNN
 F 1 "4.35n" H 11800 2250 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 12138 2150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12138 2150 50  0001 C CNN
 F 3 "~" H 12100 2300 50  0001 C CNN
 	1    12100 2300
 	1    0    0    -1  
@@ -1423,7 +1418,7 @@ U 1 1 6097A780
 P 11800 1700
 F 0 "R13" V 11593 1700 50  0000 C CNN
 F 1 "180" V 11684 1700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 11730 1700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11730 1700 50  0001 C CNN
 F 3 "~" H 11800 1700 50  0001 C CNN
 	1    11800 1700
 	0    1    1    0   
@@ -1500,7 +1495,7 @@ U 1 1 60B3E425
 P 12900 2500
 F 0 "R3" V 12693 2500 50  0000 C CNN
 F 1 "50k" V 12784 2500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 12830 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12830 2500 50  0001 C CNN
 F 3 "~" H 12900 2500 50  0001 C CNN
 	1    12900 2500
 	0    1    1    0   
@@ -1511,7 +1506,7 @@ U 1 1 60B3E42B
 P 13200 2650
 F 0 "C6" H 12950 2700 50  0000 L CNN
 F 1 "15p" H 12900 2600 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 13238 2500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 13238 2500 50  0001 C CNN
 F 3 "~" H 13200 2650 50  0001 C CNN
 	1    13200 2650
 	1    0    0    -1  
@@ -1522,7 +1517,7 @@ U 1 1 60B3E431
 P 12600 3150
 F 0 "C5" H 12350 3200 50  0000 L CNN
 F 1 "22n" H 12300 3100 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 12638 3000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12638 3000 50  0001 C CNN
 F 3 "~" H 12600 3150 50  0001 C CNN
 	1    12600 3150
 	1    0    0    -1  
@@ -1533,7 +1528,7 @@ U 1 1 60B3E437
 P 13200 3600
 F 0 "C7" H 12950 3650 50  0000 L CNN
 F 1 "4.35n" H 12900 3550 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 13238 3450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 13238 3450 50  0001 C CNN
 F 3 "~" H 13200 3600 50  0001 C CNN
 	1    13200 3600
 	1    0    0    -1  
@@ -1544,7 +1539,7 @@ U 1 1 60B3E43D
 P 12900 3000
 F 0 "R14" V 12693 3000 50  0000 C CNN
 F 1 "180" V 12784 3000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 12830 3000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12830 3000 50  0001 C CNN
 F 3 "~" H 12900 3000 50  0001 C CNN
 	1    12900 3000
 	0    1    1    0   
@@ -1639,4 +1634,38 @@ Wire Wire Line
 	14725 2550 14350 2550
 Wire Wire Line
 	14350 2550 14350 3100
+Text Notes 2750 3400 0    50   ~ 10
+Voltage Smoother
+Text Notes 2550 3600 0    50   ~ 0
+To smooth 5V power supply from\nUSB which may contain noise
+$Comp
+L SDRReciever-rescue:GND-power #PWR0105
+U 1 1 60D2F76E
+P 5075 4325
+F 0 "#PWR0105" H 5075 4075 50  0001 C CNN
+F 1 "GND" H 5050 4175 50  0000 C CNN
+F 2 "" H 5075 4325 50  0001 C CNN
+F 3 "" H 5075 4325 50  0001 C CNN
+	1    5075 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power #PWR0106
+U 1 1 60D39BF9
+P 5625 4250
+F 0 "#PWR0106" H 5625 4000 50  0001 C CNN
+F 1 "GND" H 5630 4077 50  0000 C CNN
+F 2 "" H 5625 4250 50  0001 C CNN
+F 3 "" H 5625 4250 50  0001 C CNN
+	1    5625 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 4325 5475 4225
+Wire Wire Line
+	5475 4225 5625 4225
+Wire Wire Line
+	5625 4225 5625 4250
+Text Notes 1700 4900 0    50   ~ 0
+Optional\nbypass jumper
 $EndSCHEMATC
