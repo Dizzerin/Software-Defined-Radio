@@ -341,30 +341,6 @@ X V+ 8 -100 300 150 D 50 50 3 1 W
 ENDDRAW
 ENDDEF
 #
-# SDRReciever-rescue_PN2222A-Transistor_BJT-SDRReciever-rescue
-#
-DEF SDRReciever-rescue_PN2222A-Transistor_BJT-SDRReciever-rescue Q 0 0 Y N 1 F N
-F0 "Q" 200 75 50 H V L CNN
-F1 "SDRReciever-rescue_PN2222A-Transistor_BJT-SDRReciever-rescue" 200 0 50 H V L CNN
-F2 "Package_TO_SOT_THT:TO-92_Inline" 200 -75 50 H I L CIN
-F3 "" 0 0 50 H I L CNN
-$FPLIST
- TO?92*
-$ENDFPLIST
-DRAW
-C 50 0 111 0 1 10 N
-P 2 0 1 0 0 0 25 0 N
-P 2 0 1 0 100 -100 25 -25 N
-P 2 0 1 0 100 100 25 25 N
-P 3 0 1 20 25 75 25 -75 25 -75 N
-P 3 0 1 0 95 -95 75 -75 75 -75 N
-P 5 0 1 0 45 -65 65 -45 85 -85 45 -65 45 -65 F
-X E 1 100 -200 100 U 50 50 1 1 P
-X B 2 -200 0 200 R 50 50 1 1 I
-X C 3 100 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # SDRReciever-rescue_PWR_FLAG-power-SDRReciever-rescue
 #
 DEF SDRReciever-rescue_PWR_FLAG-power-SDRReciever-rescue #FLG 0 0 N N 1 F P
@@ -451,6 +427,36 @@ X CLK2 6 500 -200 100 L 50 50 1 1 O
 X VDDO 7 100 500 100 D 50 50 1 1 W
 X GND 8 0 -500 100 U 50 50 1 1 W
 X CLK1 9 500 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# dk_Transistors-Bipolar-BJT-Single_MMBT2222A-TP
+#
+DEF dk_Transistors-Bipolar-BJT-Single_MMBT2222A-TP Q 0 0 Y Y 1 F N
+F0 "Q" -126 166 60 H V L CNN
+F1 "dk_Transistors-Bipolar-BJT-Single_MMBT2222A-TP" 206 0 60 V V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
+F3 "https://www.mccsemi.com/pdf/Products/MMBT2222A(SOT-23).pdf" 200 300 60 H I L CNN
+F4 "MMBT2222ATPMSCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MMBT2222A-TP" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
+F8 "https://www.mccsemi.com/pdf/Products/MMBT2222A(SOT-23).pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/micro-commercial-co/MMBT2222A-TP/MMBT2222ATPMSCT-ND/717394" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS NPN 40V 0.6A SOT23" 200 1000 60 H I L CNN "Description"
+F11 "Micro Commercial Co" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 128 0 1 0 f
+P 2 0 1 0 -150 0 -100 0 N
+P 2 0 1 0 -140 0 0 0 N
+P 2 0 1 0 0 -50 100 -100 N
+P 2 0 1 0 0 50 100 100 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 60 -50 80 -90 40 -100 60 -50 F
+X B 1 -200 0 100 R 50 50 1 1 I
+X E 2 100 -200 100 U 50 50 1 1 P
+X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
