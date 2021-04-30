@@ -915,7 +915,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical placed (layer F.Cu) (tedit 59FED5CC) (tstamp 608BCA2A)
-    (at 155.4988 120.777)
+    (at 170.6372 119.38)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /60888163)
@@ -991,7 +991,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical placed (layer F.Cu) (tedit 59FED5CC) (tstamp 608B854E)
-    (at 170.942 120.6754)
+    (at 156.7688 119.4308)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /5F3C5B04)
@@ -1029,7 +1029,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical placed (layer F.Cu) (tedit 59FED5CC) (tstamp 608B858A)
-    (at 159.7406 120.6754)
+    (at 145.5674 119.4308)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /5F3C6CE1)
@@ -1105,7 +1105,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical placed (layer F.Cu) (tedit 59FED5CC) (tstamp 608B88AC)
-    (at 134.5184 147.4978)
+    (at 140.9954 146.2278 180)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /5EAB170F)
@@ -1133,7 +1133,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 25 "Net-(J7-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -1143,7 +1143,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical placed (layer F.Cu) (tedit 59FED5CC) (tstamp 608B8870)
-    (at 141.732 147.4978)
+    (at 133.7818 146.2278 180)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /5EAC398F)
@@ -1171,7 +1171,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 26 /I_LO))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -1181,7 +1181,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical placed (layer F.Cu) (tedit 59FED5CC) (tstamp 608B8834)
-    (at 138.1252 147.4978)
+    (at 137.3886 146.2278 180)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /5EAB0E28)
@@ -1209,7 +1209,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 27 /Q_LO))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -1476,7 +1476,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical placed (layer F.Cu) (tedit 59FED5CC) (tstamp 608B850D)
-    (at 164.084 120.6754 90)
+    (at 149.9108 119.4308 90)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /5F3AA315)
@@ -2057,7 +2057,7 @@
     )
   )
 
-  (module Resistor_SMD:R_0805_2012Metric placed (layer F.Cu) (tedit 5B36C52B) (tstamp 608B899F)
+  (module Resistor_SMD:R_0805_2012Metric placed (layer F.Cu) (tedit 5B36C52B) (tstamp 608BE08B)
     (at 119.0752 135.509)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags resistor)
