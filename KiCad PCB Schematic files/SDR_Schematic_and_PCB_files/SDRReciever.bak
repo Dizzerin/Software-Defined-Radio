@@ -10,8 +10,8 @@ Date "2021-04-28"
 Rev "0.3"
 Comp "Walla Walla University"
 Comment1 "Author: Caleb Nelson"
-Comment2 ""
-Comment3 "ENGR 357"
+Comment2 "ENGR 357"
+Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
@@ -171,8 +171,6 @@ Wire Wire Line
 	5750 4175 5750 4225
 Wire Wire Line
 	5750 4475 5750 4425
-Text Notes 8875 1775 0    50   ~ 0
-10.7 kHz IF
 $Comp
 L SDRReciever-rescue:GND-power-SDRReciever-rescue #PWR011
 U 1 1 5EAD8F42
@@ -709,7 +707,7 @@ U 1 1 5E935447
 P 2000 1900
 F 0 "J1" H 2350 2100 50  0000 C CNN
 F 1 "Conn_Coaxial" H 2350 2000 50  0000 C CNN
-F 2 "Connector_TE-Connectivity:BNC_Socket_TYCO-AMP_LargePads" H 2000 1900 50  0001 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 2000 1900 50  0001 C CNN
 F 3 " ~" H 2000 1900 50  0001 C CNN
 	1    2000 1900
 	-1   0    0    -1  
@@ -820,10 +818,10 @@ $EndComp
 Wire Wire Line
 	2325 4675 2325 5325
 Wire Wire Line
-	3025 5325 3025 4875
-Connection ~ 3025 4875
+	3025 5325 3025 5075
+Connection ~ 3025 5075
 Wire Wire Line
-	3025 4875 3025 4775
+	3025 5075 3025 4775
 Connection ~ 2575 5025
 Wire Wire Line
 	2575 5025 2575 5075
@@ -853,23 +851,23 @@ $EndComp
 $Comp
 L 4V3Power:+4.3V #PWR05
 U 1 1 5F3E7A8D
-P 3825 4125
-F 0 "#PWR05" H 3825 3975 50  0001 C CNN
-F 1 "+4.3V" H 3840 4298 50  0000 C CNN
-F 2 "" H 3825 4125 50  0001 C CNN
-F 3 "" H 3825 4125 50  0001 C CNN
-	1    3825 4125
+P 3675 5075
+F 0 "#PWR05" H 3675 4925 50  0001 C CNN
+F 1 "+4.3V" H 3690 5248 50  0000 C CNN
+F 2 "" H 3675 5075 50  0001 C CNN
+F 3 "" H 3675 5075 50  0001 C CNN
+	1    3675 5075
 	1    0    0    -1  
 $EndComp
 $Comp
 L SDRReciever-rescue:PWR_FLAG-power-SDRReciever-rescue #FLG02
 U 1 1 5F3E8DB4
-P 3525 4125
-F 0 "#FLG02" H 3525 4200 50  0001 C CNN
-F 1 "PWR_FLAG" H 3500 4300 50  0000 C CNN
-F 2 "" H 3525 4125 50  0001 C CNN
-F 3 "~" H 3525 4125 50  0001 C CNN
-	1    3525 4125
+P 3300 5075
+F 0 "#FLG02" H 3300 5150 50  0001 C CNN
+F 1 "PWR_FLAG" H 3275 5250 50  0000 C CNN
+F 2 "" H 3300 5075 50  0001 C CNN
+F 3 "~" H 3300 5075 50  0001 C CNN
+	1    3300 5075
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -895,16 +893,14 @@ F 3 "" H 5300 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3525 4125 3825 4125
+	3300 5075 3675 5075
 Wire Wire Line
 	2325 4125 2575 4125
 Wire Wire Line
 	2325 5325 3025 5325
 Connection ~ 3025 5325
 Wire Wire Line
-	3525 4875 3525 4125
-Wire Wire Line
-	3025 4875 3525 4875
+	3025 5075 3300 5075
 Text Notes 1425 4300 0    50   ~ 0
 Voltage Smoother \nFor PC 5V power to \neliminate supply noise
 Text Notes 3300 1675 0    50   ~ 0
@@ -943,7 +939,7 @@ Wire Notes Line
 	5000 1600 5000 1650
 Text Notes 4500 5375 0    50   ~ 0
 Pull-Up Resistors for I2C lines see the \nSi5351 datasheet for details
-Connection ~ 3525 4125
+Connection ~ 3300 5075
 Text Notes 11100 4500 0    50   ~ 0
 SDA and SCL are I2C Control Signals \nfor the Si5351 Clock Generator
 Text Notes 12175 5200 0    50   ~ 0
@@ -1662,6 +1658,94 @@ F 10 "TRANS NPN 40V 0.6A SOT23" H 3125 5575 60  0001 L CNN "Description"
 F 11 "Micro Commercial Co" H 3125 5675 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 3125 5775 60  0001 L CNN "Status"
 	1    2925 4575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 608BA5A4
+P 6600 7325
+F 0 "H1" H 6700 7376 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6700 7285 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 6600 7325 50  0001 C CNN
+F 3 "~" H 6600 7325 50  0001 C CNN
+	1    6600 7325
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power-SDRReciever-rescue #PWR030
+U 1 1 608BA936
+P 6600 7425
+F 0 "#PWR030" H 6600 7175 50  0001 C CNN
+F 1 "GND" H 6605 7252 50  0000 C CNN
+F 2 "" H 6600 7425 50  0001 C CNN
+F 3 "" H 6600 7425 50  0001 C CNN
+	1    6600 7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 608BAB46
+P 6925 7325
+F 0 "H2" H 7025 7376 50  0000 L CNN
+F 1 "MountingHole_Pad" H 7025 7285 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 6925 7325 50  0001 C CNN
+F 3 "~" H 6925 7325 50  0001 C CNN
+	1    6925 7325
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power-SDRReciever-rescue #PWR031
+U 1 1 608BAB4D
+P 6925 7425
+F 0 "#PWR031" H 6925 7175 50  0001 C CNN
+F 1 "GND" H 6930 7252 50  0000 C CNN
+F 2 "" H 6925 7425 50  0001 C CNN
+F 3 "" H 6925 7425 50  0001 C CNN
+	1    6925 7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 608C3728
+P 7225 7325
+F 0 "H3" H 7325 7376 50  0000 L CNN
+F 1 "MountingHole_Pad" H 7325 7285 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 7225 7325 50  0001 C CNN
+F 3 "~" H 7225 7325 50  0001 C CNN
+	1    7225 7325
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power-SDRReciever-rescue #PWR032
+U 1 1 608C372F
+P 7225 7425
+F 0 "#PWR032" H 7225 7175 50  0001 C CNN
+F 1 "GND" H 7230 7252 50  0000 C CNN
+F 2 "" H 7225 7425 50  0001 C CNN
+F 3 "" H 7225 7425 50  0001 C CNN
+	1    7225 7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 608CC30B
+P 7525 7325
+F 0 "H4" H 7625 7376 50  0000 L CNN
+F 1 "MountingHole_Pad" H 7625 7285 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 7525 7325 50  0001 C CNN
+F 3 "~" H 7525 7325 50  0001 C CNN
+	1    7525 7325
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDRReciever-rescue:GND-power-SDRReciever-rescue #PWR033
+U 1 1 608CC312
+P 7525 7425
+F 0 "#PWR033" H 7525 7175 50  0001 C CNN
+F 1 "GND" H 7530 7252 50  0000 C CNN
+F 2 "" H 7525 7425 50  0001 C CNN
+F 3 "" H 7525 7425 50  0001 C CNN
+	1    7525 7425
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
