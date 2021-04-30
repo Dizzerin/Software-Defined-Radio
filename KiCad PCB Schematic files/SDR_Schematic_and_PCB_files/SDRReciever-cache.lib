@@ -1,11 +1,56 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 35RAPC4BHN2_35RAPC4BHN2
+# 4V3Power_+4.3V
 #
-DEF 35RAPC4BHN2_35RAPC4BHN2 J 0 40 Y N 1 L N
+DEF 4V3Power_+4.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "4V3Power_+4.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +4.3V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# SDRReciever-rescue_+3.3V-power-SDRReciever-rescue
+#
+DEF SDRReciever-rescue_+3.3V-power-SDRReciever-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "SDRReciever-rescue_+3.3V-power-SDRReciever-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# SDRReciever-rescue_+5V-power-SDRReciever-rescue
+#
+DEF SDRReciever-rescue_+5V-power-SDRReciever-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "SDRReciever-rescue_+5V-power-SDRReciever-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# SDRReciever-rescue_35RAPC4BHN2-35RAPC4BHN2
+#
+DEF SDRReciever-rescue_35RAPC4BHN2-35RAPC4BHN2 J 0 40 Y N 1 L N
 F0 "J" -201 221 50 H V L BNN
-F1 "35RAPC4BHN2_35RAPC4BHN2" -201 -301 50 H V L BNN
+F1 "SDRReciever-rescue_35RAPC4BHN2-35RAPC4BHN2" -201 -301 50 H V L BNN
 F2 "SWITCHCRAFT_35RAPC4BHN2" 0 0 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
 F4 "1.01 USD" 0 0 50 H I L BNN "PRICE"
@@ -40,126 +85,6 @@ X ~ 10 300 -100 200 L 40 40 0 0 P
 X ~ 11 300 0 200 L 40 40 0 0 P
 X ~ 2 300 -200 200 L 40 40 0 0 P
 X ~ 3 300 100 200 L 40 40 0 0 P
-ENDDRAW
-ENDDEF
-#
-# 4V3Power_+4.3V
-#
-DEF 4V3Power_+4.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "4V3Power_+4.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +4.3V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# Device_Crystal_GND24
-#
-DEF Device_Crystal_GND24 Y 0 40 Y N 1 F N
-F0 "Y" 125 200 50 H V L CNN
-F1 "Device_Crystal_GND24" 125 125 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Crystal*
-$ENDFPLIST
-DRAW
-S -45 100 45 -100 0 1 12 N
-P 2 0 1 0 -100 0 -80 0 N
-P 2 0 1 20 -80 -50 -80 50 N
-P 2 0 1 0 0 -150 0 -140 N
-P 2 0 1 0 0 140 0 150 N
-P 2 0 1 20 80 -50 80 50 N
-P 2 0 1 0 80 0 100 0 N
-P 4 0 1 0 -100 -90 -100 -140 100 -140 100 -90 N
-P 4 0 1 0 -100 90 -100 140 100 140 100 90 N
-X 1 1 -150 0 50 R 50 50 1 1 P
-X 2 2 0 200 50 D 50 50 1 1 P
-X 3 3 150 0 50 L 50 50 1 1 P
-X 4 4 0 -200 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Q_NMOS_GSD
-#
-DEF Device_Q_NMOS_GSD Q 0 0 Y N 1 F N
-F0 "Q" 200 50 50 H V L CNN
-F1 "Device_Q_NMOS_GSD" 200 -50 50 H V L CNN
-F2 "" 200 100 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 65 0 111 0 1 10 N
-C 100 -70 11 0 1 0 F
-C 100 70 11 0 1 0 F
-P 2 0 1 0 2 0 10 0 N
-P 2 0 1 0 30 -70 100 -70 N
-P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 0 30 0 100 0 N
-P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 0 30 70 100 70 N
-P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 -70 100 -100 N
-P 2 0 1 0 100 -70 100 0 N
-P 2 0 1 0 100 100 100 70 N
-P 3 0 1 10 10 75 10 -75 10 -75 N
-P 4 0 1 0 40 0 80 15 80 -15 40 0 F
-P 4 0 1 0 100 -70 130 -70 130 70 100 70 N
-P 4 0 1 0 110 20 115 15 145 15 150 10 N
-P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
-X G 1 -200 0 200 R 50 50 1 1 I
-X S 2 100 -200 100 U 50 50 1 1 P
-X D 3 100 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole_Pad
-#
-DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
-F0 "H" 0 250 50 H V C CNN
-F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*Pad*
-$ENDFPLIST
-DRAW
-C 0 50 50 0 1 50 N
-X 1 1 0 -100 100 U 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# SDRReciever-rescue_+3.3V-power-SDRReciever-rescue
-#
-DEF SDRReciever-rescue_+3.3V-power-SDRReciever-rescue #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "SDRReciever-rescue_+3.3V-power-SDRReciever-rescue" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# SDRReciever-rescue_+5V-power-SDRReciever-rescue
-#
-DEF SDRReciever-rescue_+5V-power-SDRReciever-rescue #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "SDRReciever-rescue_+5V-power-SDRReciever-rescue" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -268,6 +193,33 @@ X Ext 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# SDRReciever-rescue_Crystal_GND24-Device
+#
+DEF SDRReciever-rescue_Crystal_GND24-Device Y 0 40 Y N 1 F N
+F0 "Y" 125 200 50 H V L CNN
+F1 "SDRReciever-rescue_Crystal_GND24-Device" 125 125 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -45 100 45 -100 0 1 12 N
+P 2 0 1 0 -100 0 -80 0 N
+P 2 0 1 20 -80 -50 -80 50 N
+P 2 0 1 0 0 -150 0 -140 N
+P 2 0 1 0 0 140 0 150 N
+P 2 0 1 20 80 -50 80 50 N
+P 2 0 1 0 80 0 100 0 N
+P 4 0 1 0 -100 -90 -100 -140 100 -140 100 -90 N
+P 4 0 1 0 -100 90 -100 140 100 140 100 90 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 0 200 50 D 50 50 1 1 P
+X 3 3 150 0 50 L 50 50 1 1 P
+X 4 4 0 -200 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # SDRReciever-rescue_GND-power-SDRReciever-rescue
 #
 DEF SDRReciever-rescue_GND-power-SDRReciever-rescue #PWR 0 0 Y Y 1 F P
@@ -357,6 +309,52 @@ X V+ 8 -100 300 150 D 50 50 3 1 W
 ENDDRAW
 ENDDEF
 #
+# SDRReciever-rescue_MMBT2222A-TP-dk_Transistors-Bipolar-BJT-Single
+#
+DEF SDRReciever-rescue_MMBT2222A-TP-dk_Transistors-Bipolar-BJT-Single Q 0 0 Y Y 1 F N
+F0 "Q" -126 166 60 H V L CNN
+F1 "SDRReciever-rescue_MMBT2222A-TP-dk_Transistors-Bipolar-BJT-Single" 206 0 60 V V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
+F3 "https://www.mccsemi.com/pdf/Products/MMBT2222A(SOT-23).pdf" 200 300 60 H I L CNN
+F4 "MMBT2222ATPMSCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MMBT2222A-TP" 200 500 60 H I L CNN "MPN"
+F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
+F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
+F8 "https://www.mccsemi.com/pdf/Products/MMBT2222A(SOT-23).pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/micro-commercial-co/MMBT2222A-TP/MMBT2222ATPMSCT-ND/717394" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TRANS NPN 40V 0.6A SOT23" 200 1000 60 H I L CNN "Description"
+F11 "Micro Commercial Co" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 128 0 1 0 f
+P 2 0 1 0 -150 0 -100 0 N
+P 2 0 1 0 -140 0 0 0 N
+P 2 0 1 0 0 -50 100 -100 N
+P 2 0 1 0 0 50 100 100 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 60 -50 80 -90 40 -100 60 -50 F
+X B 1 -200 0 100 R 50 50 1 1 I
+X E 2 100 -200 100 U 50 50 1 1 P
+X C 3 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SDRReciever-rescue_MountingHole_Pad-Mechanical
+#
+DEF SDRReciever-rescue_MountingHole_Pad-Mechanical H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "SDRReciever-rescue_MountingHole_Pad-Mechanical" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # SDRReciever-rescue_PWR_FLAG-power-SDRReciever-rescue
 #
 DEF SDRReciever-rescue_PWR_FLAG-power-SDRReciever-rescue #FLG 0 0 N N 1 F P
@@ -367,6 +365,38 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
 X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# SDRReciever-rescue_Q_NMOS_GSD-Device
+#
+DEF SDRReciever-rescue_Q_NMOS_GSD-Device Q 0 0 Y N 1 F N
+F0 "Q" 200 50 50 H V L CNN
+F1 "SDRReciever-rescue_Q_NMOS_GSD-Device" 200 -50 50 H V L CNN
+F2 "" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 65 0 111 0 1 10 N
+C 100 -70 11 0 1 0 F
+C 100 70 11 0 1 0 F
+P 2 0 1 0 2 0 10 0 N
+P 2 0 1 0 30 -70 100 -70 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 0 30 0 100 0 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 0 30 70 100 70 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 -70 100 -100 N
+P 2 0 1 0 100 -70 100 0 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 10 10 75 10 -75 10 -75 N
+P 4 0 1 0 40 0 80 15 80 -15 40 0 F
+P 4 0 1 0 100 -70 130 -70 130 70 100 70 N
+P 4 0 1 0 110 20 115 15 145 15 150 10 N
+P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
+X G 1 -200 0 200 R 50 50 1 1 I
+X S 2 100 -200 100 U 50 50 1 1 P
+X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -443,36 +473,6 @@ X CLK2 6 500 -200 100 L 50 50 1 1 O
 X VDDO 7 100 500 100 D 50 50 1 1 W
 X GND 8 0 -500 100 U 50 50 1 1 W
 X CLK1 9 500 0 100 L 50 50 1 1 O
-ENDDRAW
-ENDDEF
-#
-# dk_Transistors-Bipolar-BJT-Single_MMBT2222A-TP
-#
-DEF dk_Transistors-Bipolar-BJT-Single_MMBT2222A-TP Q 0 0 Y Y 1 F N
-F0 "Q" -126 166 60 H V L CNN
-F1 "dk_Transistors-Bipolar-BJT-Single_MMBT2222A-TP" 206 0 60 V V C CNN
-F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
-F3 "https://www.mccsemi.com/pdf/Products/MMBT2222A(SOT-23).pdf" 200 300 60 H I L CNN
-F4 "MMBT2222ATPMSCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "MMBT2222A-TP" 200 500 60 H I L CNN "MPN"
-F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
-F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
-F8 "https://www.mccsemi.com/pdf/Products/MMBT2222A(SOT-23).pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/micro-commercial-co/MMBT2222A-TP/MMBT2222ATPMSCT-ND/717394" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "TRANS NPN 40V 0.6A SOT23" 200 1000 60 H I L CNN "Description"
-F11 "Micro Commercial Co" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-C 0 0 128 0 1 0 f
-P 2 0 1 0 -150 0 -100 0 N
-P 2 0 1 0 -140 0 0 0 N
-P 2 0 1 0 0 -50 100 -100 N
-P 2 0 1 0 0 50 100 100 N
-P 2 0 1 0 0 100 0 -100 N
-P 4 0 1 0 60 -50 80 -90 40 -100 60 -50 F
-X B 1 -200 0 100 R 50 50 1 1 I
-X E 2 100 -200 100 U 50 50 1 1 P
-X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
