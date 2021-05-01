@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "SDR Reciever"
-Date "2021-04-28"
-Rev "0.3"
+Date "2021-04-30"
+Rev "1"
 Comp "Walla Walla University"
 Comment1 "Author: Caleb Nelson"
 Comment2 "ENGR 357"

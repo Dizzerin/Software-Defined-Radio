@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:SDRReciever-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -48,7 +47,7 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf" H 5900 44
 	1    0    0    -1  
 $EndComp
 $Comp
-L 35RAPC4BHN2:35RAPC4BHN2 J14
+L SDRReciever-rescue:35RAPC4BHN2-35RAPC4BHN2 J14
 U 1 1 5E956DCB
 P 15300 2650
 F 0 "J14" H 15020 2583 50  0000 R CNN
@@ -537,7 +536,7 @@ F 3 "~" H 11625 4975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal_GND24 Y1
+L SDRReciever-rescue:Crystal_GND24-Device Y1
 U 1 1 5EA4F383
 P 5275 4325
 F 0 "Y1" V 4950 4275 50  0000 L CNN
@@ -1084,7 +1083,7 @@ Wire Wire Line
 	4050 6825 4450 6825
 Connection ~ 4450 6825
 $Comp
-L Device:Q_NMOS_GSD Q2
+L SDRReciever-rescue:Q_NMOS_GSD-Device Q2
 U 1 1 608B7971
 P 3200 7325
 F 0 "Q2" V 3449 7325 50  0000 C CNN
@@ -1542,7 +1541,7 @@ SCL_3V
 Wire Wire Line
 	4450 7775 3950 7775
 $Comp
-L Device:Q_NMOS_GSD Q3
+L SDRReciever-rescue:Q_NMOS_GSD-Device Q3
 U 1 1 608C951F
 P 3750 7675
 F 0 "Q3" V 3999 7675 50  0000 C CNN
@@ -1641,7 +1640,7 @@ Wire Wire Line
 NoConn ~ 15000 2550
 NoConn ~ 15000 2650
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-TP Q1
+L SDRReciever-rescue:MMBT2222A-TP-dk_Transistors-Bipolar-BJT-Single Q1
 U 1 1 608B107C
 P 2925 4575
 F 0 "Q1" H 3113 4628 60  0000 L CNN
@@ -1661,7 +1660,7 @@ F 12 "Active" H 3125 5775 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H1
+L SDRReciever-rescue:MountingHole_Pad-Mechanical H1
 U 1 1 608BA5A4
 P 6600 7325
 F 0 "H1" H 6700 7376 50  0000 L CNN
@@ -1683,7 +1682,7 @@ F 3 "" H 6600 7425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H2
+L SDRReciever-rescue:MountingHole_Pad-Mechanical H2
 U 1 1 608BAB46
 P 6925 7325
 F 0 "H2" H 7025 7376 50  0000 L CNN
@@ -1705,7 +1704,7 @@ F 3 "" H 6925 7425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H3
+L SDRReciever-rescue:MountingHole_Pad-Mechanical H3
 U 1 1 608C3728
 P 7225 7325
 F 0 "H3" H 7325 7376 50  0000 L CNN
@@ -1727,7 +1726,7 @@ F 3 "" H 7225 7425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
+L SDRReciever-rescue:MountingHole_Pad-Mechanical H4
 U 1 1 608CC30B
 P 7525 7325
 F 0 "H4" H 7625 7376 50  0000 L CNN
