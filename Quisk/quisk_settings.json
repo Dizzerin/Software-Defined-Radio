@@ -1,0 +1,260 @@
+[
+  "Ask me",
+  "MyRadio",
+  [
+    "MyRadio"
+  ],
+  [
+    {
+      "hardware_file_type": "SoftRock USB",
+      "hardware_file_name": "/home/caleb/GITs/SDR/Software-Defined-Radio/Quisk/quisk_conf_openradio.py",
+      "widgets_file_name": "softrock/widgets_tx.py",
+      "usb_vendor_id": "0x16c0",
+      "usb_product_id": "0x05dc",
+      "si570_i2c_address": "0x62",
+      "si570_direct_control": "False",
+      "si570_xtal_freq": "25000000",
+      "repeater_delay": "0.25",
+      "rx_max_amplitude_correct": "0.2",
+      "rx_max_phase_correct": "10.0",
+      "digital_tx_level": "100",
+      "channel_i": "0",
+      "channel_q": "1",
+      "channel_delay": "-1",
+      "tx_channel_delay": "-1",
+      "playback_rate": "48000",
+      "lin_sample_playback_name": "",
+      "win_sample_playback_name": "",
+      "lin_name_of_sound_play": "alsa:HDA Intel PCH ALC282 Analog (hw:1,0)",
+      "win_name_of_sound_play": "Primary",
+      "lin_name_of_sound_capt": "hw:0",
+      "win_name_of_sound_capt": "Primary",
+      "sample_rate": "48000",
+      "lin_microphone_name": "alsa:HDA Intel PCH ALC282 Analog (hw:1,0)",
+      "win_microphone_name": "",
+      "mic_sample_rate": "48000",
+      "mic_channel_I": "0",
+      "mic_channel_Q": "0",
+      "lin_name_of_mic_play": "",
+      "win_name_of_mic_play": "",
+      "mic_playback_rate": "48000",
+      "mic_play_chan_I": "0",
+      "mic_play_chan_Q": "1",
+      "lin_digital_input_name": "",
+      "win_digital_input_name": "",
+      "lin_digital_output_name": "",
+      "win_digital_output_name": "",
+      "lin_digital_rx1_name": "",
+      "win_digital_rx1_name": "",
+      "digital_output_level": "0.7",
+      "max_record_minutes": "1.00",
+      "do_repeater_offset": "False",
+      "correct_smeter": "15.5",
+      "agc_max_gain": "15000.0",
+      "agc_release_time": "1.0",
+      "freq_spacing": "0",
+      "freq_round_ssb": "0",
+      "freq_base": "0",
+      "invertSpectrum": "0 # Do not invert",
+      "modulation_index": "1.67",
+      "pulse_audio_verbose_output": "0",
+      "favorites_file_path": "",
+      "reverse_tx_sideband": "0",
+      "dc_remove_bw": "0",
+      "dxClHost": "",
+      "dxClPort": "7373",
+      "user_call_sign": "",
+      "dxClPassword": "",
+      "dxClExpireTime": "20",
+      "IQ_Server_IP": "",
+      "hamlib_ip": "localhost",
+      "hamlib_port": "4575",
+      "digital_xmlrpc_url": "http://localhost:7362",
+      "lin_hamlib_com1_name": "",
+      "lin_hamlib_com2_name": "",
+      "win_hamlib_com1_name": "",
+      "win_hamlib_com2_name": "",
+      "hot_key_ptt1": "None",
+      "hot_key_ptt2": "wx.ACCEL_NORMAL",
+      "hot_key_ptt_toggle": "False",
+      "hot_key_ptt_if_hidden": "False",
+      "station_display_lines": "1",
+      "display_fraction": "1.00",
+      "default_screen": "Graph",
+      "graph_width": "0.8",
+      "window_width": "-1",
+      "window_height": "-1",
+      "window_posX": "-1",
+      "window_posY": "-1",
+      "button_layout": "Large screen",
+      "lin_latency_millisecs": "150",
+      "win_latency_millisecs": "150",
+      "lin_data_poll_usec": "5000",
+      "win_data_poll_usec": "15000",
+      "fft_size_multiplier": "0",
+      "graph_refresh": "7",
+      "keyupDelay": "500",
+      "cwTone": "600",
+      "use_sidetone": "0",
+      "use_fast_sound": "False",
+      "lin_quisk_serial_port": "/dev/ttyUSB0",
+      "win_quisk_serial_port": "COM6",
+      "quisk_serial_cts": "None",
+      "quisk_serial_dsr": "None",
+      "midi_cwkey_device": "",
+      "midi_cwkey_note": "-1",
+      "graph_peak_hold_1": "0.25",
+      "graph_peak_hold_2": "0.10",
+      "add_imd_button": "0",
+      "add_extern_demod": "",
+      "add_fdx_button": "0",
+      "add_freedv_button": "1",
+      "freedv_tx_msg": "",
+      "spot_button_keys_tx": "True",
+      "button_font_size": "10",
+      "default_font_size": "12",
+      "status_font_size": "14",
+      "config_font_size": "14",
+      "graph_font_size": "10",
+      "graph_msg_font_size": "14",
+      "favorites_font_size": "14",
+      "lin_quisk_typeface": "",
+      "win_quisk_typeface": "Lucida Sans Unicode",
+      "use_unicode_symbols": "True",
+      "decorate_buttons": "True",
+      "color_scheme": "A",
+      "waterfall_palette": "A",
+      "BandEdge": {
+        "137k": [
+          136000,
+          138000
+        ],
+        "500k": [
+          400000,
+          600000
+        ],
+        "160": [
+          1800000,
+          2000000
+        ],
+        "80": [
+          3500000,
+          4000000
+        ],
+        "60": [
+          5300000,
+          5430000
+        ],
+        "40": [
+          7000000,
+          7300000
+        ],
+        "30": [
+          10100000,
+          10150000
+        ],
+        "20": [
+          14000000,
+          14350000
+        ],
+        "17": [
+          18068000,
+          18168000
+        ],
+        "15": [
+          21000000,
+          21450000
+        ],
+        "12": [
+          24890000,
+          24990000
+        ],
+        "10": [
+          28000000,
+          29700000
+        ],
+        "6": [
+          50000000,
+          54000000
+        ],
+        "4": [
+          70000000,
+          70500000
+        ],
+        "2": [
+          144000000,
+          148000000
+        ],
+        "1.25": [
+          222000000,
+          225000000
+        ],
+        "70cm": [
+          420000000,
+          450000000
+        ],
+        "33cm": [
+          902000000,
+          928000000
+        ],
+        "23cm": [
+          1240000000,
+          1300000000
+        ],
+        "13cm": [
+          2300000000,
+          2450000000
+        ],
+        "9cm": [
+          3300000000,
+          3500000000
+        ],
+        "5cm": [
+          5650000000,
+          5925000000
+        ],
+        "3cm": [
+          10000000000,
+          10500000000
+        ],
+        "Aux1": [
+          0,
+          0
+        ]
+      },
+      "bandLabels": [
+        "Audio",
+        "160",
+        "80",
+        [
+          "60",
+          "60",
+          "60",
+          "60",
+          "60"
+        ],
+        "40",
+        "30",
+        "20",
+        "17",
+        "15",
+        "12",
+        "10",
+        [
+          "Time",
+          "Time",
+          "Time",
+          "Time",
+          "Time",
+          "Time",
+          "Time",
+          "Time"
+        ]
+      ],
+      "bandTransverterOffset": {},
+      "use_sdriq": "0",
+      "use_soapy": "0",
+      "use_rx_udp": "0"
+    }
+  ]
+]

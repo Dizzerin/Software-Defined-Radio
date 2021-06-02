@@ -1,0 +1,168 @@
+{
+  "bandState": {
+    "Audio": [
+      0,
+      0,
+      "LSB"
+    ],
+    "160": [
+      1890000,
+      -10000,
+      "LSB"
+    ],
+    "80": [
+      3660000,
+      -10000,
+      "LSB"
+    ],
+    "60": [
+      5370000,
+      1500,
+      "USB"
+    ],
+    "40": [
+      7180000,
+      -5000,
+      "LSB"
+    ],
+    "30": [
+      10120000,
+      -10000,
+      "CWL"
+    ],
+    "Time": [
+      5000000,
+      0,
+      "AM"
+    ],
+    "20": [
+      14180000,
+      10000,
+      "USB"
+    ],
+    "17": [
+      18120000,
+      10000,
+      "USB"
+    ],
+    "15": [
+      21230000,
+      10000,
+      "USB"
+    ],
+    "12": [
+      24940000,
+      10000,
+      "USB"
+    ],
+    "10": [
+      28850000,
+      10000,
+      "USB"
+    ],
+    "6": [
+      52000000,
+      10000,
+      "USB"
+    ],
+    "4": [
+      70250000,
+      10000,
+      "USB"
+    ],
+    "2": [
+      146000000,
+      10000,
+      "USB"
+    ],
+    "1.25": [
+      223500000,
+      10000,
+      "USB"
+    ],
+    "70cm": [
+      435000000,
+      10000,
+      "USB"
+    ],
+    "33cm": [
+      915000000,
+      10000,
+      "USB"
+    ],
+    "23cm": [
+      1270000000,
+      10000,
+      "USB"
+    ],
+    "13cm": [
+      2375000000,
+      10000,
+      "USB"
+    ],
+    "9cm": [
+      3400000000,
+      10000,
+      "USB"
+    ],
+    "5cm": [
+      5787500000,
+      10000,
+      "USB"
+    ],
+    "3cm": [
+      10250000000,
+      10000,
+      "USB"
+    ]
+  },
+  "bandAmplPhase": {
+    "Version": {
+      "rx": []
+    }
+  },
+  "lastBand": "Audio",
+  "VFO": 0,
+  "txFreq": 0,
+  "mode": "LSB",
+  "vardecim_set": 48000,
+  "filterAdjBw1": 1000,
+  "levelAGC": 500,
+  "levelOffAGC": 100,
+  "volumeAudio": 300,
+  "levelSpot": 500,
+  "levelSquelch": 500,
+  "levelSquelchSSB": 200,
+  "levelVOX": -20,
+  "timeVOX": 500,
+  "sidetone_volume": 0,
+  "txAudioClipUsb": 5,
+  "txAudioClipAm": 0,
+  "txAudioClipFm": 0,
+  "txAudioClipFdv": 0,
+  "txAudioPreemphUsb": 70,
+  "txAudioPreemphAm": 0,
+  "txAudioPreemphFm": 0,
+  "txAudioPreemphFdv": 0,
+  "wfallScaleZ": {},
+  "wfallGrScaleZ": {},
+  "graphScaleZ": {},
+  "split_rxtx_play": 2,
+  "modeFilter": {
+    "CW": 3,
+    "SSB": 3,
+    "AM": 3,
+    "FM": 3,
+    "DGT": 1,
+    "FDV": 2,
+    "IMD": 3,
+    "": 3
+  },
+  "file_name_rec_audio": "",
+  "file_name_rec_samples": "",
+  "file_name_rec_mic": "",
+  "file_name_rec_tmp": "",
+  "file_name_play_audio": "",
+  "file_name_play_samples": "",
+  "file_name_play_cq": ""
+}
