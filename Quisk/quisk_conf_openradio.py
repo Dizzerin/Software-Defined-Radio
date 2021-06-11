@@ -72,7 +72,8 @@ class Hardware(BaseHardware):
       vfo = openradio_upper
       print("Outside range! Setting to %d" % openradio_upper)
 
-    success = self.set_parameter("FREQ",str(vfo))
+    # success = self.set_parameter("FREQ",str(vfo))
+    self.set_parameter("FREQ",str(vfo))
 
     print("sample_rate =")
     print(sample_rate)
@@ -81,10 +82,10 @@ class Hardware(BaseHardware):
       tune = vfo + 10000
       print("Bringing tune frequency back into the RX bandwidth.")
 
-    if success:
-      print("Frequency change succeeded!")
-    else:
-      print("Frequency change failed.")
+    # if success:
+    #   print("Frequency change succeeded!")
+    # else:
+    #   print("Frequency change failed.")
 
     return tune, vfo
 
@@ -101,10 +102,14 @@ class Hardware(BaseHardware):
   def set_parameter(self,string,arg):
     string = string+","+arg+"\n"
     self.or_serial.write(string.encode())
-    if self.get_argument() == arg:
-      return True
-    else:
-      return False
+    print('arg is: ', arg)
+    temp_arg = self.get_argument()
+    print('temp_arg is: ', temp_arg)
+    return True
+    # if temp_arg == arg:
+    #   return True
+    # else:
+    #   return False
     
   def get_argument(self):
     data1 = self.or_serial.readline()
@@ -115,6 +120,7 @@ class Hardware(BaseHardware):
     # Maybe we didn't catch an OK line?
     if data1.startswith(b'OK'):
        data1 = self.or_serial.readline()
+       print('Received: ', data1)
         
     # Check to see if we have a comma in the string. If not, there is no argument.
     if data1.find(b',') == -1:

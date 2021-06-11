@@ -9,6 +9,11 @@ It comes in two parts:
 2. A Quisk config file which also provides an interface allowing communication with the OpenRadio board. This file (quisk_conf_openradio.py) needs to be copied to your home directory (~/.quisk_conf.py) and edited appropriately. The following settings may need to be edited:
  * Sound card settings
  * Serial port settings
+ 
+Prerequisites to build the Arduino code:
+
+1. Etherkit Si5351a library
+2. TimerOne library
 
 So, to make this work:
 

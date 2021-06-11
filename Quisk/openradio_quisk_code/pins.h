@@ -10,8 +10,9 @@
 
 // Which Si5351 clock is used for what...
 #define RX_CLOCK    SI5351_CLK0
-#define TX_CLOCK    SI5351_CLK1
-#define SPARE_CLOCK    SI5351_CLK2
+#define TX_CLOCK    SI5351_CLK2
+#define SPARE_CLOCK    SI5351_CLK1
+
 
 // Fast pin toggling.
 #define digitalToggleFast(P) \
